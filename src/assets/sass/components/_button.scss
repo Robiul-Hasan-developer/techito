@@ -4,10 +4,12 @@
     text-align: center;
     transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
 .button--stroke {
     &:hover {
         color: #0e100f;
     }
+
     &::after {
         content: "";
         position: absolute;
@@ -19,10 +21,12 @@
         border-radius: inherit;
         pointer-events: none;
     }
+
     .button__flair {
         transform: scale(0);
         transform-origin: 0 0;
     }
+
     .button__label {
         transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
@@ -35,6 +39,7 @@
     right: 0;
     bottom: 0;
     pointer-events: none;
+
     &::before {
         content: "";
         position: absolute;
@@ -59,47 +64,87 @@
     border-radius: 6px;
     z-index: 1;
     transition: .2s linear;
-    &:hover, &:focus, &:focus-visible {
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
         box-shadow: none !important;
     }
+
     // ============= Different Color Button Start ==================
     &-main {
-        background-color: var(--main-600) !important;
+        background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%) !important;
         color: hsl(var(--white)) !important;
+
         &.button--stroke {
             &::after {
                 border-color: transparent;
             }
         }
-    
+
     }
 }
 
+
+.button__label {
+    transition: .6s ease-in-out !important;
+}
+
+.button-icon__right {
+    position: absolute !important;
+    inset-inline-end: 6px;
+    transition: .6s ease-in-out !important;
+}
+
+.btn {
+    padding-inline-end: 54px !important;
+
+    &:hover {
+        padding-inline-start: 60px;
+        padding-inline-end: 0 !important;
+
+        .button-icon__right {
+            inset-inline-end: calc(100% - 54px);
+        }
+
+    }
+}
+
+
 .hover-style {
     &-one {
-        &:hover, &:active {
+
+        &:hover,
+        &:active {
             background-color: var(--main-600);
+
             &.button--stroke {
                 &::after {
                     border-color: transparent;
                 }
             }
         }
+
         .button__flair {
             &::before {
                 background-color: var(--main-two-600);
             }
         }
     }
+
     &-two {
-        &:hover, &:active {
+
+        &:hover,
+        &:active {
             color: var(--main-two-600) !important;
+
             &.button--stroke {
                 &::after {
                     border-color: transparent;
                 }
             }
         }
+
         .button__flair {
             &::before {
                 background-color: hsl(var(--white));
@@ -107,4 +152,5 @@
         }
     }
 }
+
 /* =========================== Button Css End =================== */

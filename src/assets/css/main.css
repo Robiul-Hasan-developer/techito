@@ -88,14 +88,15 @@
     --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
   /* Font Size End */
   /* template main color */
-    --main-h: 209;
-    --main-s: 94%;
-    --main-l: 41%;
+    --main-h: 191;
+    --main-s: 90%;
+    --main-l: 53%;
     --main: var(--main-h) var(--main-s) var(--main-l);
-    --main-two-h: 249;
-    --main-two-s: 63%;
-    --main-two-l: 15%;
+    --main-two-h: 221;
+    --main-two-s: 100%;
+    --main-two-l: 69%;
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+    --gradient-main: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%);
   /* White Color */
     --white: 0 0% 100%;
     --black: 0 0% 0%;
@@ -300,12 +301,35 @@
 }
 
 .btn-main {
-    background-color: var(--main-600) !important;
+    background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%) !important;
     color: hsl(var(--white)) !important;
 }
 
 .btn-main.button--stroke::after {
     border-color: transparent;
+}
+
+.button__label {
+    transition: 0.6s ease-in-out !important;
+}
+
+.button-icon__right {
+    position: absolute !important;
+    inset-inline-end: 6px;
+    transition: 0.6s ease-in-out !important;
+}
+
+.btn {
+    padding-inline-end: 54px !important;
+}
+
+.btn:hover {
+    padding-inline-start: 60px;
+    padding-inline-end: 0 !important;
+}
+
+.btn:hover .button-icon__right {
+    inset-inline-end: calc(100% - 54px);
 }
 
 .hover-style-one:hover, .hover-style-one:active {
@@ -1638,6 +1662,12 @@ input:focus, input:focus-visible {
     color: var(--neutral-950);
 }
 
+.text-main-gradient {
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .text--white {
     color: hsl(var(--white));
 }
@@ -2094,6 +2124,10 @@ input:focus, input:focus-visible {
     height: 320px;
 }
 
+.tw-h-440-px {
+    height: 440px;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
@@ -2331,7 +2365,7 @@ input:focus, input:focus-visible {
 /* grid css end */
 /* Gradient BG Css Start */
 .gradient-bg-main {
-    background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%);
+    background: var(--gradient-main);
 }
 
 /* Gradient BG Css End */
@@ -3104,8 +3138,16 @@ input:focus, input:focus-visible {
     margin-inline-start: auto;
 }
 
+.tw--ms-20-px {
+    margin-inline-start: -20px;
+}
+
 .tw-me-auto {
     margin-inline-end: auto;
+}
+
+.tw-mt-96-px {
+    margin-block-start: clamp(2rem, -1.6923rem + 7.6923vw, 6rem);
 }
 
 .my-120 {
@@ -3202,6 +3244,10 @@ input:focus, input:focus-visible {
     max-width: 200px;
 }
 
+.max-w-250-px {
+    max-width: 250px;
+}
+
 .max-w-1140-px {
     max-width: 1140px;
 }
@@ -3212,6 +3258,10 @@ input:focus, input:focus-visible {
 
 .max-w-1740-px {
     max-width: 1740px;
+}
+
+.max-w-690-px {
+    max-width: 690px;
 }
 
 /* Max width Css Class End */
@@ -4198,6 +4248,10 @@ input:focus, input:focus-visible {
     transform: scale(1.06);
 }
 
+.hover-scale-14:hover {
+    transform: scale(1.4);
+}
+
 .hover-scale-108:hover {
     transform: scale(1.08);
 }
@@ -4544,6 +4598,10 @@ input:focus, input:focus-visible {
 
 .tw-z-999 {
     z-index: 999;
+}
+
+.tw-hover-z-4:hover {
+    z-index: 4 !important;
 }
 
 /* Z index css End */
@@ -5407,6 +5465,39 @@ input:focus, input:focus-visible {
 }
 
 /* ============================ Search Popup css end ===================================== */
+/* Banner Css Start */
+.banner {
+    padding: 160px 0;
+}
+
+@media (min-width: 992px) {
+    .banner {
+        padding: 220px 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .banner {
+        padding: 250px 0;
+    }
+}
+
+.man-image {
+    max-width: 32%;
+}
+
+.arrow-stroke {
+    inset-inline-start: 21%;
+    inset-block-end: 58px;
+    max-width: 12%;
+}
+
+.banner-right-content {
+    transform: translateY(24px);
+    margin-top: 24px;
+}
+
+/* Banner Css End */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

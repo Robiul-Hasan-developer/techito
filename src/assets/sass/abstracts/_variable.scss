@@ -92,15 +92,17 @@ $font-sizes: (
   /* Font Size End */
 
   /* template main color */
-  --main-h: 209;
-  --main-s: 94%;
-  --main-l: 41%;
+  --main-h: 191;
+  --main-s: 90%;
+  --main-l: 53%;
   --main: var(--main-h) var(--main-s) var(--main-l);
 
-  --main-two-h: 249;
-  --main-two-s: 63%;
-  --main-two-l: 15%;
+  --main-two-h: 221;
+  --main-two-s: 100%;
+  --main-two-l: 69%;
   --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+
+  --gradient-main: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%);
 
   /* White Color */
   --white: 0 0% 100%;

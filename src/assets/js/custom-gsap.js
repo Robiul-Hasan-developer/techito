@@ -143,107 +143,101 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-// if ($(".splitTextStyleOne").length > 0) {
-//   let character = gsap.utils.toArray(".splitTextStyleOne");
-//   character.forEach((character) => {
-//     let split_char = new SplitText(character, {
-//       type: "chars, words",
-//       lineThreshold: 0.3,
-//     });
-//     const tl2 = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: character,
-//         start: "top 90%",
-//         end: "bottom 60%",
-//         scrub: false,
-//         markers: false,
-//         toggleActions: "play none none none",
-//       },
-//     });
-//     tl2.from(split_char.chars, {
+// if ($(".splitTextStyleOne").length) {
+//   let staggerAmount = 0.03,
+//     translateXValue = 20,
+//     delayValue = 0.1,
+//     easeType = "power2.out",
+//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
+
+//   animatedTextElements.forEach((element) => {
+//     let animationSplitText = new SplitText(element, { type: "chars, words" });
+//     gsap.from(animationSplitText.chars, {
+//       duration: 1,
+//       delay: delayValue,
+//       x: translateXValue,
 //       autoAlpha: 0,
-//       x: 40,
-//       duration: 0.3,
-//       opacity: 0,
-//       stagger: 0.03,
-//       ease: "back.out(1.7)",
+//       stagger: staggerAmount,
+//       ease: easeType,
+//       scrollTrigger: { trigger: element, start: "top 85%" },
+//     });
+//   });
+// }
+$(window).on("load", function () {
+    if ($(".splitText").length) {
+      gsap.registerPlugin(SplitText, ScrollTrigger);
+
+      $(".splitText").each(function (index, el) {
+        el.split = new SplitText(el, {
+          type: "lines,words,chars",
+          linesClass: "split-line"
+        });
+
+        // Set initial state
+        gsap.set(el.split.chars, {
+          yPercent: 35,
+          opacity: 0
+        });
+
+        // Animate on scroll
+        el.anim = gsap.to(el.split.chars, {
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+          },
+          yPercent: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power2.out",
+          stagger: 0.05
+        });
+      });
+    }
+  });
+
+
+// if ($(".splitTextStyleOne").length) {
+//   var waSplitClr = $(".splitTextStyleOne");
+
+//   gsap.registerPlugin(SplitText);
+
+//   waSplitClr.each(function (index, el) {
+//     el.split = new SplitText(el, {
+//       type: "lines,words,chars",
+//       linesClass: "split-line",
+//     });
+
+//     gsap.set(el, { perspective: 400 });
+
+//     let delayValue = $(el).attr("data-split-delay") || "0s";
+//     delayValue = parseFloat(delayValue) || 0;
+
+//     if ($(el).hasClass("splitTextStyleOne")) {
+//       gsap.set(el.split.chars, {
+//         x: 50,
+//         opacity: 0.1,
+//         color: getComputedStyle(document.documentElement).getPropertyValue("--tn-clr-pr-1"),
+//       });
+//     }
+
+//     el.anim = gsap.to(el.split.chars, {
+//       scrollTrigger: {
+//         trigger: el,
+//         start: "top 90%",
+//         toggleActions: "play none none reverse",
+//       },
+//       x: 0,
+//       color: "inherit",
+//       opacity: 1,
+//       duration: 0.6,
+//       ease: "ease1",
+//       stagger: 0.02,
+//       delay: delayValue,
 //     });
 //   });
 // }
 
-if ($(".splitTextStyleOne").length) {
-  let staggerAmount = 0.03,
-    translateXValue = 20,
-    delayValue = 0.1,
-    easeType = "power2.out",
-    animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
-
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.chars, {
-      duration: 1,
-      delay: delayValue,
-      x: translateXValue,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      ease: easeType,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
-  });
-}
-
-if ($(".splitTextStyleTwo").length) {
-  let animatedTextElements = document.querySelectorAll(".splitTextStyleTwo");
-
-  animatedTextElements.forEach((element) => {
-    //Reset if needed
-    if (element.animation) {
-      element.animation.progress(1).kill();
-      element.split.revert();
-    }
-
-    element.split = new SplitText(element, {
-      type: "lines,words,chars",
-      linesClass: "split-line",
-    });
-    gsap.set(element, { perspective: 400 });
-
-    gsap.set(element.split.chars, {
-      opacity: 0,
-      x: "50",
-    });
-
-    element.animation = gsap.to(element.split.chars, {
-      scrollTrigger: { trigger: element, start: "top 90%" },
-      x: "0",
-      y: "0",
-      rotateX: "0",
-      opacity: 1,
-      duration: 1,
-      ease: Back.easeOut,
-      stagger: 0.02,
-    });
-  });
-}
-
-if ($(".splitTextStyleThree").length) {
-  let staggerAmount = 0.05,
-    translateXValue = 0,
-    delayValue = 0.5,
-    animatedTextElements = document.querySelectorAll(".splitTextStyleThree");
-
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.words, {
-      duration: 1,
-      delay: delayValue,
-      x: 20,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
-  });
-}
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
@@ -368,6 +362,113 @@ if ($(".split-reveal").length) {
   });
 }
 // **************************** split Reveal js End ****************************
+
+
+// **************************** Hover Parallax animation js Start ****************************
+var hoverBtns = gsap.utils.toArray(".hover-parallax-wrapper");
+const hoverBtnItem = gsap.utils.toArray(".hover-parallax-item");
+hoverBtns.forEach((btn, i) => {
+  $(btn).mousemove(function (e) {
+    callParallax(e);
+  });
+
+  function callParallax(e) {
+    parallaxIt(e, hoverBtnItem[i], 60);
+  }
+
+  function parallaxIt(e, target, movement) {
+    var $this = $(btn);
+    var relX = e.pageX - $this.offset().left;
+    var relY = e.pageY - $this.offset().top;
+
+    gsap.to(target, 1, {
+      x: ((relX - $this.width() / 2) / $this.width()) * movement,
+      y: ((relY - $this.height() / 2) / $this.height()) * movement,
+      ease: Power2.easeOut,
+    });
+  }
+  $(btn).mouseleave(function (e) {
+    gsap.to(hoverBtnItem[i], 1, {
+      x: 0,
+      y: 0,
+      ease: Power2.easeOut,
+    });
+  });
+});
+// **************************** Hover Parallax animation js End ****************************
+
+
+  // ============================ On Scroll Rotate Text start ==========================
+gsap.utils.toArray(".hover-parallax-wrapper").forEach((el, index) => {
+  let tlcta = gsap.timeline({
+    scrollTrigger: {
+      trigger: el,
+      scrub: 1,
+      start: "top 30%",
+      end: "top 0%",
+      toggleActions: "play none none reverse",
+      markers: false,
+    },
+  });
+
+  tlcta.to(el, {
+    rotate: 360,
+    ease: "none", // optional: keeps it linear during scrub
+  });
+});
+  // ============================ On Scroll Rotate Text end ==========================
+
+
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// let tl2 = gsap.timeline();
+// tl2.to("#scrollingText", {
+//   x:1000,
+//   duration:50,
+//   repeat:-1,
+//   ease:'linear'
+// })
+// let tl = gsap.timeline();
+// tl.to('#scrollingText', {
+//   xPercent:15,
+//   scrollTrigger:{
+//     trigger:"#scrollingText",
+//     scrub:1
+//   }
+// })
+
+
+
+
+
+// ============================ Pricing Plan Cards animation ============================
+	// gsap.utils.toArray(" .asslideupcta").forEach((el, index) => {
+	// 	let tlcta = gsap.timeline({
+	// 		scrollTrigger: {
+	// 			trigger: el,
+	// 			scrub: 1,
+	// 			start: "top 90%",
+	// 			end: "top 70%",
+	// 			toggleActions: "play none none reverse",
+	// 			markers: false,
+	// 		},
+	// 	});
+
+	// 	tlcta
+	// 		.set(el, { transformOrigin: "center center" })
+	// 		.from(
+	// 			el,
+	// 			{ opacity: 1, y: "+=300" },
+	// 			{ opacity: 1, y: 0, duration: 1, immediateRender: false }
+	// 		);
+	// });
+
+
+
+
+
+
 
 /* **************************************************************************** 
                           Custom GSAP js start 

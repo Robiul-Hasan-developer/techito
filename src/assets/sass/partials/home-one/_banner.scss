@@ -1,0 +1,29 @@
+/* Banner Css Start */
+.banner {
+    padding: 160px 0;
+
+    @media (min-width: 992px) {
+        padding: 220px 0;
+    }
+
+    @media (min-width: 1500px) {
+        padding: 250px 0;
+    }
+}
+
+.man-image {
+    max-width: 32%;
+}
+
+.arrow-stroke {
+    inset-inline-start: 21%;
+    inset-block-end: 58px;
+    max-width: 12%;
+}
+
+.banner-right-content {
+    transform: translateY(24px);
+    margin-top: 24px;
+}
+
+/* Banner Css End */

@@ -1,9 +1,8 @@
 /* Font Family*/
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 $colors: (
-  "main": (
-    "50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
+  "main": ("50": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.9)),
     "100": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.8)),
     "200": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.7)),
     "300": hsl(var(--main-h), var(--main-s), calc(var(--main-l) + (100% - var(--main-l)) * 0.6)),
@@ -12,10 +11,8 @@ $colors: (
     "600": hsl(var(--main-h), var(--main-s), var(--main-l)), // main theme color
     "700": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.1)),
     "800": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.2)),
-    "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))
-  ),
-  "main-two": (
-    "50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
+    "900": hsl(var(--main-h), var(--main-s), calc(var(--main-l) - var(--main-l) * 0.3))),
+  "main-two": ("50": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.9)),
     "100": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.8)),
     "200": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.7)),
     "300": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) + (100% - var(--main-two-l)) * 0.6)),
@@ -24,11 +21,9 @@ $colors: (
     "600": hsl(var(--main-two-h), var(--main-two-s), var(--main-two-l)), // main two theme color
     "700": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.1)),
     "800": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2)),
-    "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))
-  ),
-  
-  "neutral": (
-    "50": #f9fafb,
+    "900": hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3))),
+
+  "neutral": ("50": #f9fafb,
     "100": #f3f4f6,
     "200": #e5e7eb,
     "300": #d1d5db,
@@ -44,7 +39,7 @@ $colors: (
 
 // Space
 $spaces: (
-  "05": #{rem(2px)}, 
+  "05": #{rem(2px)},
   "1": #{rem(4px)},
   "105": #{rem(6px)},
   "2": #{rem(8px)},
@@ -82,17 +77,17 @@ $font-sizes: (
 );
 
 /* ========================= Variable Css Start ======================== */
-:root {    
+:root {
   /* Font Family Variable */
-  --heading-font: 'Vidaloka', serif;
-  --body-font: 'Poppins', sans-serif;
-  
+  --heading-font: "Space Grotesk", sans-serif;
+  --body-font: "Inter", sans-serif;
+
   /* Font Size Variable Start */
-  --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem); // Min:32px - Max:68px
-  --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem); // Min: 28px - Max: 46px
-  --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem); // Min: 24px - Max: 40px
-  --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem); // Min: 20px - Max: 32px
-  --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem); // Min: 18px - Max: 28px
+  --heading-one: clamp(2.5rem, -2.2308rem + 9.8558vw, 7.625rem); // Min:40px - Max:122px
+  --heading-two: clamp(2rem, 0.8462rem + 2.4038vw, 3.25rem); // Min: 32px - Max: 52px
+  --heading-three: clamp(1.5rem, 0.6923rem + 1.6827vw, 2.375rem); // Min: 24px - Max: 38px
+  --heading-four: clamp(1.5rem, 1.1538rem + 0.7212vw, 1.875rem); // Min: 24px - Max: 30px
+  --heading-five: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.5rem); // Min: 20px - Max: 24px
   --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem); // Min: 16px - Max-20px
   /* Font Size End */
 
@@ -107,22 +102,22 @@ $font-sizes: (
   --main-two-l: 15%;
   --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
 
-   /* White Color */
+  /* White Color */
   --white: 0 0% 100%;
   --black: 0 0% 0%;
   --body: 0 0% 43%;
-  
+
   --heading-color: var(--black);
   --body-color: var(--body);
 
-  --translate-x-50: translateX(-50%); 
-  --translate-y-50: translateY(-50%); 
-    
+  --translate-x-50: translateX(-50%);
+  --translate-y-50: translateY(-50%);
+
   // spacing
   @each $property, $value in $spaces {
     --size-#{$property}: #{$value};
   }
-  
+
   // Colors
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
@@ -133,6 +128,7 @@ $font-sizes: (
   // font sizes
   @each $property, $value in $font-sizes {
     --font-#{$property}: #{$value};
-  }  
+  }
 }
+
 /* ========================= Variable Css End ======================== */

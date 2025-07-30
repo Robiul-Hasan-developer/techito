@@ -3,6 +3,7 @@
   @include md-screen {
     padding: 10px 0;
   }
+
   &.fixed-header {
     position: sticky;
     inset-inline-start: 0;
@@ -13,15 +14,18 @@
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+
     @include md-screen {
       inset-block-start: -1px;
     }
   }
 }
+
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0);
   }
@@ -31,16 +35,19 @@
 .nav-menu {
   &__item {
     &.activePage {
-      > a {
+      >a {
         color: var(--main-600) !important;
+
         &::before {
           color: var(--main-600);
         }
       }
     }
+
     &:hover {
-      > a {
+      >a {
         color: hsl(var(--heading-color));
+
         @media (min-width: 992px) {
           color: var(--main-600);
         }
@@ -51,21 +58,25 @@
 
 .has-submenu {
   &.active {
-    > a,
-    > a::before {
+
+    >a,
+    >a::before {
       color: var(--main-600);
     }
-    > a::before {
+
+    >a::before {
       transform: translateY(-50%) rotate(180deg) !important;
     }
   }
+
   &:hover {
     .nav-submenu {
       visibility: visible;
       opacity: 1;
       transform: scaleY(1);
     }
-    > a {
+
+    >a {
       &::before {
         @media (min-width: 992px) {
           color: var(--main-600);
@@ -74,8 +85,10 @@
       }
     }
   }
-  > a {
+
+  >a {
     position: relative;
+
     &::before {
       position: absolute;
       content: "\E136";
@@ -84,7 +97,7 @@
       transform: translateY(-50%);
       font-family: "Phosphor";
       font-weight: 900;
-      color: hsl(var(--heading-color) / 0.4);
+      color: inherit;
       transition: 0.2s linear;
     }
   }
@@ -99,10 +112,12 @@
   transform: scaleY(0);
   transition: 0.4s ease;
   transform-origin: top center;
+
   @media (min-width: 992px) {
     max-height: 400px;
     overflow-y: auto;
   }
+
   &__item {
     &.activePage {
       .nav-submenu {
@@ -111,6 +126,7 @@
         }
       }
     }
+
     &:hover {
       a {
         color: hsl(var(--heading-color));
@@ -118,6 +134,12 @@
     }
   }
 }
+
 /* Submenu End */
+
+.menu-text-white .nav-menu__link {
+  color: #fff;
+}
+
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */

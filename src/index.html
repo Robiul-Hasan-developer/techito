@@ -121,6 +121,26 @@
   <span class="dot"></span>
   <!-- Custom Cursor End -->
 
+  <!-- Search Popup Start -->
+  <div class="search-popup bg-white tw-p-17 d-flex align-items-center justify-content-center bg-white">
+    <div class="container">
+      <div class="tw-pb-15">
+        <button type="button"
+          class="search-popup__close d-flex justify-content-center align-items-center text-white tw-text-2xl tw-w-16 tw-h-16 bg-main-600 rounded-circle mx-auto">
+          <i class="ph-bold ph-x"></i>
+        </button>
+      </div>
+      <form action="#" class="search-popup__form position-relative tw-pt-6">
+        <input type="search" class="search-popup__input" placeholder="Search Here...">
+        <button type="submit"
+          class="tw-text-3xl tw-leading-none text-heading hover-text-main-600 position-absolute tw-end-0 top-50 translate-middle-y">
+          <i class="ph-bold ph-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- Search Popup End -->
+
   <!-- ==================== Mobile Menu Start Here ==================== -->
 <div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
 
@@ -136,11 +156,7 @@
             <!-- Nav menu Start -->
 <ul class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8">
   <li class="nav-menu__item has-submenu activePage">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Home</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Home</a>
 
     <!-- mega menu start -->
 <div
@@ -557,148 +573,93 @@
 <!-- mega menu end -->
   </li>
   <li class="nav-menu__item has-submenu position-relative">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Pages</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Pages</a>
     <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
-    >
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Property</a
-        >
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
       </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          About Us</a
-        >
-      </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          FAQ</a
-        >
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Project</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Services</a>
     <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
-    >
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Project
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="services.html"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Services
         </a>
       </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-          >Project Details</a
-        >
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="services-details.html"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Services
+          Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Blog</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Portfolio</a>
     <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
-    >
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Blog Classic</a
-        >
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Portfolio</a>
       </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Blog Details</a
-        >
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">News</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          News</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          News Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item">
-    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-medium w-100"
-      >Contact</a
-    >
+    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-medium w-100">Contact</a>
   </li>
 </ul>
 <!-- Nav menu End  -->
-
         </div>
     </div>
 </div>
 <!-- ==================== Mobile Menu End Here ==================== -->
 
 <!-- ==================== Header Start Here ==================== -->
-<header class="header bg-neutral-100 tw-transition-all tw-z-99">
-  <div class="container container-two">
-    <nav
-      class="d-flex align-items-center justify-content-between position-relative"
-    >
+<header class="header bg-black tw-transition-all tw-z-99">
+  <div class="container max-w-1740-px">
+    <nav class="d-flex align-items-center justify-content-between position-relative">
       <!-- Logo Start -->
       <div class="logo">
         <a href="index.html" class="link">
-          <img
-            src="assets/images/logo/logo.png"
-            alt="Logo"
-            class="max-w-200-px"
-          >
+          <img src="assets/images/logo/logo-white.png" alt="Logo" class="max-w-200-px">
         </a>
       </div>
       <!-- Logo End  -->
 
       <!-- Menu Start  -->
-      <div class="header-menu d-lg-block d-none">
+      <div class="header-menu d-lg-block d-none ms-auto">
         <!-- Nav menu Start -->
-<ul class="nav-menu d-lg-flex align-items-center tw-gap-6">
+<ul class="nav-menu d-lg-flex align-items-center tw-gap-6 menu-text-white">
   <li class="nav-menu__item has-submenu activePage">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Home</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Home</a>
 
     <!-- mega menu start -->
 <div
@@ -1115,138 +1076,90 @@
 <!-- mega menu end -->
   </li>
   <li class="nav-menu__item has-submenu position-relative">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Pages</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Pages</a>
     <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
-    >
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Property</a
-        >
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          About Us</a>
       </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          About Us</a
-        >
-      </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          FAQ</a
-        >
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          FAQ</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Project</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Services</a>
     <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
-    >
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Project
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="services.html"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Services
         </a>
       </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-          >Project Details</a
-        >
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="services-details.html"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">Services
+          Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item has-submenu position-relative">
-    <a
-      href="javascript:void(0)"
-      class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100"
-      >Blog</a
-    >
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">Portfolio</a>
     <ul
-      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
-    >
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Blog Classic</a
-        >
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          Portfolio</a>
       </li>
-      <li
-        class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
-      >
-        <a
-          href="#"
-          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded"
-        >
-          Blog Details</a
-        >
+    </ul>
+  </li>
+  <li class="nav-menu__item has-submenu position-relative">
+    <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-heading tw-py-9 fw-medium w-100">News</a>
+    <ul
+      class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          News</a>
+      </li>
+      <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+        <a href="#"
+          class="nav-submenu__link hover-bg-neutral-200 text-heading fw-medium w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+          News Details</a>
       </li>
     </ul>
   </li>
   <li class="nav-menu__item">
-    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-medium w-100"
-      >Contact</a
-    >
+    <a href="#" class="nav-menu__link text-heading tw-py-9 fw-medium w-100">Contact</a>
   </li>
 </ul>
 <!-- Nav menu End  -->
-
       </div>
       <!-- Menu End  -->
 
       <!-- Header Right start -->
-      <div class="d-lg-block d-none">
-        <div class="d-flex align-items-center tw-gap-105 flex-shrink-0">
-          <a
-            href="register.html"
-            class="hover--translate-y-1 transition-all text-lg hover-underline text-heading hover-text-neutral-900 fw-medium"
-            >Login</a
-          >
-          <span>/</span>
-          <a
-            href="register.html"
-            class="hover--translate-y-1 transition-all text-lg hover-underline text-heading hover-text-neutral-900 fw-medium"
-            >Register</a
-          >
+      <div class="d-lg-block d-none tw-ms-10">
+        <div class="d-flex align-items-center tw-gap-4 flex-shrink-0">
+          <a href="cart.html" class="position-relative tw-me-2 active-scale-09 tw-duration-100">
+            <img src="assets/images/icons/bag-icon.png" alt="Icon">
+            <span
+              class="tw-w-5 tw-h-5 gradient-bg-main text-white rounded-circle d-flex justify-content-center align-items-center tw-text-sm position-absolute bottom-0 tw-end-0 translate-8-px tw-leading-none">0</span>
+          </a>
+          <button type="button" class="active-scale-09 tw-duration-100 search-popup__button">
+            <img src="assets/images/icons/search-icon.png" alt="Icon">
+          </button>
+          <button type="button" class="active-scale-09 tw-duration-100">
+            <img src="assets/images/icons/bar-icon.png" alt="Icon">
+          </button>
         </div>
       </div>
-      <button
-        type="button"
-        class="toggle-mobileMenu leading-none d-lg-none ms-3 text-neutral-800 tw-text-9"
-      >
+      <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-neutral-800 tw-text-9">
         <i class="ph ph-list"></i>
       </button>
       <!-- Header Right End  -->
@@ -1254,7 +1167,6 @@
   </div>
 </header>
 <!-- ==================== Header End Here ==================== -->
-
 
 <!-- <div class="container my-5">
     <div class="">

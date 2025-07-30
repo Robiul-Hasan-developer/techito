@@ -73,18 +73,18 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
-    --heading-font: "Vidaloka", serif;
-    --body-font: "Poppins", sans-serif;
+    --heading-font: "Space Grotesk", sans-serif;
+    --body-font: "Inter", sans-serif;
   /* Font Size Variable Start */
-    --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
-    --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
-    --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem);
-    --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem);
-    --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem);
+    --heading-one: clamp(2.5rem, -2.2308rem + 9.8558vw, 7.625rem);
+    --heading-two: clamp(2rem, 0.8462rem + 2.4038vw, 3.25rem);
+    --heading-three: clamp(1.5rem, 0.6923rem + 1.6827vw, 2.375rem);
+    --heading-four: clamp(1.5rem, 1.1538rem + 0.7212vw, 1.875rem);
+    --heading-five: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.5rem);
     --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
   /* Font Size End */
   /* template main color */
@@ -2329,6 +2329,12 @@ input:focus, input:focus-visible {
 }
 
 /* grid css end */
+/* Gradient BG Css Start */
+.gradient-bg-main {
+    background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%);
+}
+
+/* Gradient BG Css End */
 /* Inset class start */
 .tw-start-0 {
     inset-inline-start: 0;
@@ -4384,6 +4390,10 @@ input:focus, input:focus-visible {
     transform: translateX(-8px);
 }
 
+.translate-8-px {
+    transform: translate(8px, 8px);
+}
+
 /*================================== Translate Css End  ==================================*/
 /* Transform Css Start */
 .origin-left {
@@ -5080,7 +5090,7 @@ input:focus, input:focus-visible {
     transform: translateY(-50%);
     font-family: "Phosphor";
     font-weight: 900;
-    color: hsl(var(--heading-color)/0.4);
+    color: inherit;
     transition: 0.2s linear;
 }
 
@@ -5111,6 +5121,10 @@ input:focus, input:focus-visible {
 }
 
 /* Submenu End */
+.menu-text-white .nav-menu__link {
+    color: #fff;
+}
+
 /* Header Menu and Submenu Css End */
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
@@ -5314,6 +5328,85 @@ input:focus, input:focus-visible {
 }
 
 /* Custom Cursor Css End */
+/* ============================ Search Popup css start ===================================== */
+.search-popup {
+    height: 0;
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    z-index: 999999;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+}
+
+.search-popup__form {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.search-popup__input {
+    height: 64px;
+    line-height: 64px;
+    font-size: 28px;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid var(--neutral-200);
+    padding-left: 0;
+    border-radius: 0;
+    width: 100%;
+    padding-inline-end: 44px;
+    color: hsl(var(--heading-color));
+}
+
+.search-popup__input:focus {
+    outline: 0;
+    border-color: var(--main-600);
+}
+
+.search-popup__close {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid hsl(var(--heading-color));
+    transform: translateY(80px);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.search-popup__close i {
+    transition: 0.2s linear;
+}
+
+.search-popup__close:hover i {
+    transform: rotate(90deg);
+}
+
+.search-popup.active {
+    visibility: visible;
+    opacity: 2;
+    height: 400px;
+}
+
+.search-popup.active .search-popup__form {
+    transition-delay: 0.3s;
+    width: 100%;
+}
+
+.search-popup.active .search-popup__close {
+    transition-delay: 0.5s;
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ============================ Search Popup css end ===================================== */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

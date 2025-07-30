@@ -1,0 +1,25 @@
+/* Brand css start */
+.border-left-right {
+    position: relative;
+    z-index: 1;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #FFFFFF42;
+        inset-inline-start: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+    &::after {
+        inset-inline-end: 100%;
+        inset-inline-start: auto;
+    }
+}
+
+/* Brand css end */

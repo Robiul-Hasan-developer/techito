@@ -769,19 +769,25 @@ body {
 p {
     font-weight: 400;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.8125;
 }
 
 span {
     display: inline-block;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     margin: 0;
     font-family: var(--heading-font);
     color: hsl(var(--heading-color));
@@ -789,27 +795,33 @@ h6, .h6 {
     font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: var(--heading-one);
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: var(--heading-two);
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: var(--heading-three);
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: var(--heading-four);
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: var(--heading-five);
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: var(--heading-six);
 }
 
@@ -872,7 +884,8 @@ button:focus {
     box-shadow: none;
 }
 
-input:focus, input:focus-visible {
+input:focus,
+input:focus-visible {
     box-shadow: none;
 }
 
@@ -1539,6 +1552,10 @@ input:focus, input:focus-visible {
 
 .border-white-26 {
     border-color: #FFFFFF42 !important;
+}
+
+.border-white-36 {
+    border-color: #FFFFFF5E !important;
 }
 
 /* Colors class start */
@@ -2370,6 +2387,29 @@ input:focus, input:focus-visible {
 /* Gradient BG Css Start */
 .gradient-bg-main {
     background: var(--gradient-main);
+}
+
+.hover-gradient-main {
+    position: relative;
+    z-index: 1;
+}
+
+.hover-gradient-main::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: var(--gradient-main);
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.hover-gradient-main:hover::before {
+    height: 100%;
+    inset-block-start: 0;
 }
 
 /* Gradient BG Css End */
@@ -4028,6 +4068,10 @@ input:focus, input:focus-visible {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
 
+.tw-px-48-px {
+    padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -5563,12 +5607,21 @@ input:focus, input:focus-visible {
     height: 100%;
     background-color: #FFFFFF3D;
     border: 1px solid #FFFFFF54;
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(16px);
     z-index: -1;
 }
 
 /* Feature Css End */
+@media (min-width: 1200px) {
+    .about-image {
+        position: absolute !important;
+        top: 50%;
+        transform: translateY(-50%) !important;
+        inset-inline-start: 50%;
+        height: 100%;
+    }
+}
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

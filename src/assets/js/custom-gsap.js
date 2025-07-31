@@ -446,7 +446,7 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 			scrollTrigger: {
 				trigger: el,
 				scrub: 1,
-				start: "top 90%",
+				start: "top 85%",
 				end: "buttom 60%",
 				toggleActions: "play none none reverse",
 				markers: false,
@@ -466,7 +466,7 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 			scrollTrigger: {
 				trigger: el,
 				scrub: 1,
-				start: "top 90%",
+				start: "top 85%",
 				end: "buttom 60%",
 				toggleActions: "play none none reverse",
 				markers: false,

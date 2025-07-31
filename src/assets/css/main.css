@@ -5622,6 +5622,18 @@ input:focus-visible {
         height: 100%;
     }
 }
+
+.js-marquee-wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.js-marquee {
+    display: flex;
+    gap: 32px;
+    min-width: max-content;
+}
+
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

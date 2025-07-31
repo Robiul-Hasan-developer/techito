@@ -246,7 +246,7 @@
     
     // ========================= AOS Js Start ===========================
     AOS.init({
-      once: true,
+      once: false,
     });
     // ========================= AOS Js End ===========================
 
@@ -324,6 +324,28 @@
       return bg;
     });
     // ========================== Add Attribute For Bg Image Js End =====================
+
+
+    // ====================== Marquee Js Start ========================
+    if ($(".marquee_left").length) {
+      $(".marquee_left").marquee({
+        speed: 50,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: $("html").attr("dir") === "rtl" ? "right" : "left",
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
+        direction: "left",
+      });
+    }
+
+    
+    
+    
+    
+    
+    
   });
   // ==========================================
   //      End Document Ready function

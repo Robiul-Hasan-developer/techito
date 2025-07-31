@@ -440,7 +440,7 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
   // ============================ On Scroll Rotate Text end ==========================
 
 
-	// For each images with class "animate-image" on page
+	// For each Item slide left
 	gsap.utils.toArray(".item-slide-left").forEach((el, index) => {
 		let tl3 = gsap.timeline({
 			scrollTrigger: {
@@ -460,7 +460,7 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 		);
 	});
 
-	// For each images with class "animate-image" on page
+	// For each Item slide right
 	gsap.utils.toArray(".item-slide-right").forEach((el, index) => {
 		let tl4 = gsap.timeline({
 			scrollTrigger: {
@@ -480,7 +480,7 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 		);
 	});
 
-	// For each images with class "animate-image" on page
+	// For each Item slide up
 	gsap.utils.toArray(".item-slide-up").forEach((el, index) => {
 		let tl4 = gsap.timeline({
 			scrollTrigger: {
@@ -500,7 +500,7 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 		);
 	});
 
-	// For each images with class "animate-image" on page
+	// For each Item zoomout
 	// gsap.utils.toArray(".item-zoomout").forEach((el, index) => {
 	// 	let tl6 = gsap.timeline({
 	// 		scrollTrigger: {
@@ -522,29 +522,6 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 
   
   
-  
-  
-  
-
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// let tl2 = gsap.timeline();
-// tl2.to("#scrollingText", {
-//   x:1000,
-//   duration:50,
-//   repeat:-1,
-//   ease:'linear'
-// })
-// let tl = gsap.timeline();
-// tl.to('#scrollingText', {
-//   xPercent:15,
-//   scrollTrigger:{
-//     trigger:"#scrollingText",
-//     scrub:1
-//   }
-// })
-
 
 
 

@@ -879,9 +879,9 @@ input:focus, input:focus-visible {
 /* ================================= Typography Css End =========================== */
 /* Bg Image Css Start */
 .bg-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
     width: 100%;
     height: 100%;
 }
@@ -3254,6 +3254,10 @@ input:focus, input:focus-visible {
 
 .max-w-1140-px {
     max-width: 1140px;
+}
+
+.max-w-1410-px {
+    max-width: 1410px;
 }
 
 .max-w-1290-px {

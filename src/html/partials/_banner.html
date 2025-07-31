@@ -1,9 +1,10 @@
 <!-- =========================== Banner Section Start ========================== -->
-<section class="banner bg-black position-relative z-1">
+<section class="banner position-relative z-1">
     <img src="assets/images/shapes/banner-pattern-shape.png" alt="Pattern Shape"
         class="position-absolute tw-end-0 top-0">
-    <img src="assets/images/shapes/arrow-stroke.png" alt="Arrow Shape"
-        class="arrow-stroke position-absolute animated-upDown">
+    <div class="arrow-stroke position-absolute animated-upDown ">
+        <img src="assets/images/shapes/arrow-stroke.png" alt="Arrow Shape" class="rotate-on-scroll ">
+    </div>
 
     <div class="container max-w-1740-px">
         <div class="d-flex justify-content-between position-relative z-1 flex-xl-nowrap flex-wrap">
@@ -54,11 +55,14 @@
                 </div>
             </div>
             <div class="man-image position-absolute start-50 top-50 translate-middle z-n1 d-xl-block d-none">
-                <img src="assets/images/thumbs/banner-img.png" alt="Image" class="animated-upDown animation-delay-1">
+                <div class=" man-image__img">
+                    <img src="assets/images/thumbs/banner-img.png" alt="Image"
+                        class="animated-upDown animation-delay-1">
+                </div>
             </div>
             <div class="banner-right-content d-flex flex-column justify-content-between tw-gap-8">
                 <div class="text-center">
-                    <div class="hover-parallax-wrapper d-inline-block">
+                    <div class="hover-parallax-wrapper rotate-on-scroll d-inline-block">
                         <a href="about.html" class="d-inline-block position-relative hover-parallax-item">
                             <img src="assets/images/icons/rotate-text.png" alt="Icon" class="animation-rotate-right">
                             <img src="assets/images/icons/arrow-right-up-long.png" alt="Icon"

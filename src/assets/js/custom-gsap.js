@@ -398,8 +398,8 @@ hoverBtns.forEach((btn, i) => {
 // **************************** Hover Parallax animation js End ****************************
 
 
-  // ============================ On Scroll Rotate Text start ==========================
-gsap.utils.toArray(".hover-parallax-wrapper").forEach((el, index) => {
+// ============================ On Scroll Rotate Text start ==========================
+gsap.utils.toArray(".rotate-on-scroll").forEach((el, index) => {
   let tlcta = gsap.timeline({
     scrollTrigger: {
       trigger: el,
@@ -413,7 +413,28 @@ gsap.utils.toArray(".hover-parallax-wrapper").forEach((el, index) => {
 
   tlcta.to(el, {
     rotate: 360,
-    ease: "none", // optional: keeps it linear during scrub
+    ease: "none",
+  });
+});
+  // ============================ On Scroll Rotate Text end ==========================
+
+
+// ============================ On Scroll Rotate Text start ==========================
+gsap.utils.toArray(".man-image__img").forEach((el, index) => {
+  let maImageTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: el,
+      scrub: 1,
+      start: "top 90%",
+      end: "top -20%",
+      toggleActions: "play none none reverse",
+      markers: false,
+    },
+  });
+
+  maImageTl.to(el, {
+    scale: .8,
+    ease: "none",
   });
 });
   // ============================ On Scroll Rotate Text end ==========================

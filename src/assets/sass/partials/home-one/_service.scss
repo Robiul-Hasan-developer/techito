@@ -1,0 +1,162 @@
+/* =========================== Service Section Start ========================== */
+.service-item-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .service-item-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+.service-item {
+    flex: 1;
+    transition: 0.2s linear;
+    background-color: #121212;
+    border-inline-end: 1px solid #2E2E2E;
+
+    @media (min-width: 992px) {
+        height: 624px;
+    }
+
+    &__bg {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .hidden-content {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+
+
+    &__number {
+        color: #FFFFFF0D;
+        font-size: clamp(4rem, -4.3269rem + 16.8269vw, 12.5rem);
+        position: absolute;
+        writing-mode: sideways-lr;
+        inset-block-end: -70px;
+        inset-inline-start: 50px;
+    }
+
+    &__title {
+        writing-mode: sideways-lr;
+
+    }
+
+    &__icon {
+        width: 112px;
+        height: 112px;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+
+
+    &.active {
+        flex: 2.6;
+
+        .service-item__bg {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .current-content {
+            visibility: hidden;
+            opacity: 0;
+            height: 0 !important;
+        }
+
+
+        .hidden-content {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .animate-up-down {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .service-item__number {
+            inset-inline-start: auto;
+            inset-inline-end: 40px;
+            color: #FFFFFF42;
+        }
+    }
+}
+
+.animate-up-down {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    transition: 0.2s linear;
+    transition-delay: 200ms;
+}
+
+.animation-delay {
+    &-01 {
+        transition-delay: 100ms;
+    }
+
+    &-02 {
+        transition-delay: 200ms;
+    }
+
+    &-03 {
+        transition-delay: 300ms;
+    }
+
+    &-04 {
+        transition-delay: 400ms;
+    }
+}
+
+
+
+
+@media (max-width: 991px) {
+    .service-item-wrapper {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-item__bg {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .hidden-content {
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: 100% !important;
+    }
+
+    .current-content {
+        display: none !important;
+    }
+
+    .animate-up-down {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(-0px);
+        transform: translateY(-0px);
+    }
+}
+
+@media (max-width: 767px) {
+    .service-item-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================== Service Section End ========================== */

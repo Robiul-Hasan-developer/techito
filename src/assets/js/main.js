@@ -339,6 +339,14 @@
         direction: "left",
       });
     }
+    // ====================== Marquee Js End ========================
+
+     // ========================= service Tab Js start ===================
+    $(document).on("click", ".service-item", function () {
+      $(".service-item").removeClass("active");
+      $(this).addClass("active");
+    });
+    // ========================= service Tab Js End ===================
 
     
     

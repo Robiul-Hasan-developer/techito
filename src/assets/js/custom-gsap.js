@@ -143,26 +143,6 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-// if ($(".splitTextStyleOne").length) {
-//   let staggerAmount = 0.03,
-//     translateXValue = 20,
-//     delayValue = 0.1,
-//     easeType = "power2.out",
-//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
-
-//   animatedTextElements.forEach((element) => {
-//     let animationSplitText = new SplitText(element, { type: "chars, words" });
-//     gsap.from(animationSplitText.chars, {
-//       duration: 1,
-//       delay: delayValue,
-//       x: translateXValue,
-//       autoAlpha: 0,
-//       stagger: staggerAmount,
-//       ease: easeType,
-//       scrollTrigger: { trigger: element, start: "top 85%" },
-//     });
-//   });
-// }
 $(window).on("load", function () {
     if ($(".splitText").length) {
       gsap.registerPlugin(SplitText, ScrollTrigger);
@@ -188,56 +168,13 @@ $(window).on("load", function () {
           },
           yPercent: 0,
           opacity: 1,
-          duration: 0.8,
+          duration: 0.4,
           ease: "power2.out",
           stagger: 0.05
         });
       });
     }
   });
-
-
-// if ($(".splitTextStyleOne").length) {
-//   var waSplitClr = $(".splitTextStyleOne");
-
-//   gsap.registerPlugin(SplitText);
-
-//   waSplitClr.each(function (index, el) {
-//     el.split = new SplitText(el, {
-//       type: "lines,words,chars",
-//       linesClass: "split-line",
-//     });
-
-//     gsap.set(el, { perspective: 400 });
-
-//     let delayValue = $(el).attr("data-split-delay") || "0s";
-//     delayValue = parseFloat(delayValue) || 0;
-
-//     if ($(el).hasClass("splitTextStyleOne")) {
-//       gsap.set(el.split.chars, {
-//         x: 50,
-//         opacity: 0.1,
-//         color: getComputedStyle(document.documentElement).getPropertyValue("--tn-clr-pr-1"),
-//       });
-//     }
-
-//     el.anim = gsap.to(el.split.chars, {
-//       scrollTrigger: {
-//         trigger: el,
-//         start: "top 90%",
-//         toggleActions: "play none none reverse",
-//       },
-//       x: 0,
-//       color: "inherit",
-//       opacity: 1,
-//       duration: 0.6,
-//       ease: "ease1",
-//       stagger: 0.02,
-//       delay: delayValue,
-//     });
-//   });
-// }
-
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************

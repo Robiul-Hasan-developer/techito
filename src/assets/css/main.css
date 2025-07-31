@@ -1169,6 +1169,10 @@ input:focus-visible {
     background-color: hsl(var(--white)/0.06);
 }
 
+.bg-white-10 {
+    background-color: hsl(var(--white)/0.1);
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -1703,6 +1707,10 @@ input:focus-visible {
 
 .text-main {
     color: var(--main-600);
+}
+
+.text-white-80 {
+    color: #FFFFFFCC;
 }
 
 /* Colors class End */

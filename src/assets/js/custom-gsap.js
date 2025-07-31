@@ -440,6 +440,92 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
   // ============================ On Scroll Rotate Text end ==========================
 
 
+	// For each images with class "animate-image" on page
+	gsap.utils.toArray(".item-slide-left").forEach((el, index) => {
+		let tl3 = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 1,
+				start: "top 90%",
+				end: "buttom 60%",
+				toggleActions: "play none none reverse",
+				markers: false,
+			},
+		});
+
+		tl3.set(el, { transformOrigin: "center center" }).from(
+			el,
+			{ x: "-=100" },
+			{ x: 0, duration: 1, immediateRender: false }
+		);
+	});
+
+	// For each images with class "animate-image" on page
+	gsap.utils.toArray(".item-slide-right").forEach((el, index) => {
+		let tl4 = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 1,
+				start: "top 90%",
+				end: "buttom 60%",
+				toggleActions: "play none none reverse",
+				markers: false,
+			},
+		});
+
+		tl4.set(el, { transformOrigin: "center center" }).from(
+			el,
+			{ x: "+=100" },
+			{ x: 0, duration: 1, immediateRender: false }
+		);
+	});
+
+	// For each images with class "animate-image" on page
+	gsap.utils.toArray(".item-slide-up").forEach((el, index) => {
+		let tl4 = gsap.timeline({
+			scrollTrigger: {
+				trigger: el,
+				scrub: 1,
+				start: "top 85%",
+				end: "buttom 60%",
+				toggleActions: "play none none reverse",
+				markers: false,
+			},
+		});
+
+		tl4.set(el, { transformOrigin: "center center" }).from(
+			el,
+			{ y: "+=100" },
+			{ y: 0, duration: 1, immediateRender: false }
+		);
+	});
+
+	// For each images with class "animate-image" on page
+	// gsap.utils.toArray(".item-zoomout").forEach((el, index) => {
+	// 	let tl6 = gsap.timeline({
+	// 		scrollTrigger: {
+	// 			trigger: el,
+	// 			scrub: 1,
+	// 			start: "top 85%",
+	// 			end: "buttom 50%",
+	// 			toggleActions: "play none none reverse",
+	// 			markers: false,
+	// 		},
+	// 	});
+
+	// 	tl6.set(el, { transformOrigin: "center center" }).fromTo(
+	// 		el,
+	// 		{ scale: 2 },
+	// 		{ scale: 1, duration: 1, immediateRender: false }
+	// 	);
+	// });
+
+  
+  
+  
+  
+  
+
 
 // gsap.registerPlugin(ScrollTrigger);
 
@@ -486,6 +572,36 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 	// });
 
 
+
+
+
+  
+	// For each images with class "animate-image" on page
+	// gsap.utils.toArray(".rotatedscal").forEach((el, index) => {
+	// 	let tl3 = gsap.timeline({
+	// 		scrollTrigger: {
+	// 			trigger: el,
+	// 			scrub: 1,
+	// 			start: "top 90%",
+	// 			end: "buttom 60%",
+	// 			toggleActions: "play none none reverse",
+	// 			markers: false,
+	// 		},
+	// 	});
+
+	// 	tl3.set(el, { transformOrigin: "center center" }).from(
+	// 		el,
+	// 		{ opacity: 1, rotateZ: 45, scale: 0.5, y: "+=100" },
+	// 		{
+	// 			opacity: 1,
+	// 			rotateZ: 0,
+	// 			scale: 1,
+	// 			y: 0,
+	// 			duration: 1,
+	// 			immediateRender: false,
+	// 		}
+	// 	);
+	// });
 
 
 

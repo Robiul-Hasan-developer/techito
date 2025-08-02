@@ -2278,6 +2278,7 @@ input:focus-visible {
     height: 250%;
     transition: all 0.6s linear;
     background-color: transparent;
+    pointer-events: none;
 }
 
 /* Hover animation white css end */
@@ -4167,7 +4168,7 @@ input:focus-visible {
 }
 
 .tw-p-40-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.5rem);
+    padding: clamp(1.5rem, 0.5769rem + 1.9231vw, 2.5rem);
 }
 
 .tw-p-48-px {

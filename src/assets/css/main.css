@@ -1795,6 +1795,10 @@ input:focus-visible {
     color: #FFFFFFCC;
 }
 
+.text-white-30 {
+    color: #FFFFFF4F;
+}
+
 /* Colors class End */
 /* Hover color class start */
 .hover-text-main-50:hover {
@@ -5943,6 +5947,34 @@ input:focus-visible {
     }
 }
 /* Roadmap css end */
+/* creative team section css start */
+.team-item-image-wrapper {
+    border-radius: 15px;
+    width: 330px;
+    height: 330px;
+    opacity: 0;
+    position: fixed;
+    overflow: hidden;
+    transform: translate(-50%, -50%) rotate(15deg);
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    pointer-events: none;
+}
+
+.team-item-image-wrapper img {
+    inset-inline-start: 0;
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 575px) {
+    .scroll-in-mobile {
+        overflow-x: auto;
+    }
+}
+/* creative team section css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

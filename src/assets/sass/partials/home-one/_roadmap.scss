@@ -1,0 +1,47 @@
+/* Roadmap css start */
+.roadmap-content {
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) scale(.2);
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.roadmap-item {
+    &:hover {
+        z-index: 1;
+
+        .roadmap-content {
+            transform: translate(-50%, -50%) scale(1);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &:not(:first-child) {
+        @media (min-width: 992px) {
+            margin-inline-start: -50px;
+        }
+    }
+
+    &__thumb {
+        transition: .3s ease-in-out;
+    }
+}
+
+.sm-grid-2 {
+    @media (max-width: 991px) {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 410px) {
+        display: grid !important;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Roadmap css end */

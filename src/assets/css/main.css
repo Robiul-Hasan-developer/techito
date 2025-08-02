@@ -1972,6 +1972,10 @@ input:focus-visible {
     font-size: inherit;
 }
 
+.text-18-px {
+    font-size: clamp(0.875rem, 0.6442rem + 0.4808vw, 1.125rem);
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -3372,10 +3376,18 @@ input:focus-visible {
     max-height: 100vh;
 }
 
+.tw-max-h-300-px {
+    max-height: 300px;
+}
+
 /* Max Height Css Class End */
 /* Max width Css Class Start */
 .max-w-200-px {
     max-width: 200px;
+}
+
+.max-w-300-px {
+    max-width: 300px;
 }
 
 .max-w-250-px {
@@ -5880,6 +5892,52 @@ input:focus-visible {
     }
 }
 /* =========================== Service Section End ========================== */
+/* Roadmap css start */
+.roadmap-content {
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) scale(0.2);
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.roadmap-item:hover {
+    z-index: 1;
+}
+
+.roadmap-item:hover .roadmap-content {
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .roadmap-item:not(:first-child) {
+        margin-inline-start: -50px;
+    }
+}
+
+.roadmap-item__thumb {
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+    .sm-grid-2 {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 410px) {
+    .sm-grid-2 {
+        display: grid !important;
+        grid-template-columns: 1fr;
+    }
+}
+/* Roadmap css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

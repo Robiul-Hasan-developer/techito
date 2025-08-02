@@ -458,6 +458,21 @@ gsap.utils.toArray(".man-image__img").forEach((el, index) => {
 	// });
 
   
+// **************************** Roadmap js start ****************************
+if($('.roadmap-item').length) { 
+  gsap.from(".roadmap-item", {
+      y: -140,
+      ease: "bounce.out", 
+      duration: 1.8,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: "#roadmap-section",
+        start: "top 90%",
+        toggleActions: "play none none none",
+      }
+  });
+}
+// **************************** Roadmap js End ****************************
   
 
 

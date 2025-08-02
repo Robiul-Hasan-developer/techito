@@ -1,7 +1,11 @@
 /* Font Size Class Start */
 .text {
   &-inherit {
-      font-size: inherit;
+    font-size: inherit;
+  }
+
+  &-18-px {
+    font-size: clamp(0.875rem, 0.6442rem + 0.4808vw, 1.125rem);
   }
 }
 
@@ -9,13 +13,15 @@
   .tw-text-#{$property} {
     font-size: $value;
   }
-}  
+}
+
 /* Font Size Class End */
 
 
 @each $property, $value in $spaces {
-    .tw-text-#{$property} {
-      font-size: $value;
-    }
-}  
+  .tw-text-#{$property} {
+    font-size: $value;
+  }
+}
+
 /* Font Size Class End */

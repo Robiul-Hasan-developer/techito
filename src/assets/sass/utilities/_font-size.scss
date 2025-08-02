@@ -7,6 +7,10 @@
   &-18-px {
     font-size: clamp(0.875rem, 0.6442rem + 0.4808vw, 1.125rem);
   }
+
+  &-80-px {
+    font-size: clamp(2.75rem, 0.6731rem + 4.3269vw, 5rem);
+  }
 }
 
 @each $property, $value in $font-sizes {

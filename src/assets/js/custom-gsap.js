@@ -483,7 +483,7 @@ const imageSlider = document.querySelector(".team-item-image")
 gsap.utils.toArray(".team-item-wrapper").forEach(el => {
   // mouse enter
   el.addEventListener("mouseenter", (e) => {
-    gsap.to(imageWrapper, {width: "330px", height: "330px", duration: 0.4, opacity: 1})
+    gsap.to(imageWrapper, { duration: 0.4, opacity: 1})
   });
   el.addEventListener("mouseleave", (e) => {
     gsap.to(imageWrapper, {opacity: 0, duration: 0.4})

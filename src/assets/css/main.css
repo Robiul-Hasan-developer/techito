@@ -5950,8 +5950,8 @@ input:focus-visible {
 /* creative team section css start */
 .team-item-image-wrapper {
     border-radius: 15px;
-    width: 330px;
-    height: 330px;
+    width: 236px;
+    height: 300px;
     opacity: 0;
     position: fixed;
     overflow: hidden;
@@ -5962,11 +5962,15 @@ input:focus-visible {
 }
 
 .team-item-image-wrapper img {
-    inset-inline-start: 0;
-    width: 330px;
-    height: 330px;
+    width: 236px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
+}
+
+.team-item-image {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 575px) {

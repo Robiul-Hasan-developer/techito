@@ -1,8 +1,8 @@
 /* creative team section css start */
 .team-item-image-wrapper {
     border-radius: 15px;
-    width: 330px;
-    height: 330px;
+    width: 236px;
+    height: 300px;
     opacity: 0;
     position: fixed;
     overflow: hidden;
@@ -12,12 +12,16 @@
     pointer-events: none;
 
     img {
-        inset-inline-start: 0;
-        width: 330px;
-        height: 330px;
+        width: 236px;
+        height: 300px;
         object-fit: cover;
         object-position: center;
     }
+}
+
+.team-item-image {
+    display: flex;
+    flex-direction: column;
 }
 
 .scroll-in-mobile {

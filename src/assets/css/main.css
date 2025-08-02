@@ -229,6 +229,37 @@
     color: hsl(var(--heading-color));
 }
 
+@media (max-width: 575px) {
+    .sm-rounded-xl,
+.sm-rounded-xl .nav-link {
+        border-radius: 12px !important;
+    }
+
+    .sm-device-link-bg .nav-link.active {
+        background: var(--gradient-main) !important;
+    }
+}
+
+.background {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50rem;
+    background: var(--gradient-main);
+    position: absolute;
+    z-index: -1;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    inset-inline-start: 0;
+    transition: all 0.2s linear;
+    border-radius: 50rem;
+    pointer-events: none;
+}
+
+.background.style-two {
+    height: calc(100% - 6px);
+}
+
 /* ================================= Accordion Css End =========================== */
 /* ========================== Button Css Start =============== */
 .button__label {
@@ -745,6 +776,57 @@ input[type=number] {
 }
 
 /* Toast Message Css End  */
+/* Radial Progress Bar css start */
+.circle-border {
+    position: relative;
+}
+
+.circle-border::before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border: 1px solid #FFFFFF47;
+    border-radius: 50%;
+    top: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 140px;
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: none;
+    stroke: #FFFFFF63;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+svg.radial-progress circle.incomplete {
+    stroke-width: 2;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.9114857513;
+    stroke-dashoffset: 219.9114857513;
+    stroke: var(--main-600);
+    transition: stroke-dashoffset 1.25s ease-out;
+}
+
+svg.radial-progress text {
+    fill: var(--main-600);
+    text-anchor: middle;
+    transform: rotate(0deg);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Radial Progress Bar css end */
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;

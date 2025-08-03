@@ -406,6 +406,33 @@
     animateProgress(); // Run on page load
     // ========================= Animated Radial Progress Js End ===================
     
+    // ========================= Testimonials Slider Js Start ===================
+    var testimonialsSlider = new Swiper(".testimonials-slider", {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: false,
+      speed: 1500,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".testi-button-next",
+        prevEl: ".testi-button-prev",
+      },
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+    });
+  // ========================= Testimonials Slider Js End ===================
+
+    
     
     
     

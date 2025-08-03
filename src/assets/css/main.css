@@ -1980,8 +1980,16 @@ input:focus-visible {
     font-size: clamp(0.875rem, 0.6442rem + 0.4808vw, 1.125rem);
 }
 
+.text-22-px {
+    font-size: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.375rem);
+}
+
 .text-80-px {
     font-size: clamp(2.75rem, 0.6731rem + 4.3269vw, 5rem);
+}
+
+.text-36-px {
+    font-size: clamp(1.25rem, 0.6923rem + 1.6827vw, 2.25rem);
 }
 
 .tw-text-xs {
@@ -3403,6 +3411,10 @@ input:focus-visible {
     max-width: 250px;
 }
 
+.max-w-450-px {
+    max-width: 450px;
+}
+
 .max-w-1140-px {
     max-width: 1140px;
 }
@@ -4183,8 +4195,16 @@ input:focus-visible {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
 }
 
+.tw-px-44-px {
+    padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.75rem);
+}
+
 .tw-px-48-px {
     padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
+}
+
+.tw-py-60-px {
+    padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.75rem);
 }
 
 .py-120 {

@@ -81,7 +81,17 @@
                 border-color: transparent;
             }
         }
+    }
 
+    &-black {
+        background: hsl(var(--black)) !important;
+        color: hsl(var(--white)) !important;
+
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
     }
 }
 

@@ -99,7 +99,7 @@
     --gradient-main: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%);
   /* White Color */
     --white: 0 0% 100%;
-    --black: 0 0% 0%;
+    --black: 0 0% 1%;
     --body: 0 0% 43%;
     --heading-color: var(--black);
     --body-color: var(--body);
@@ -345,6 +345,15 @@
 }
 
 .btn-main.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-black {
+    background: hsl(var(--black)) !important;
+    color: hsl(var(--white)) !important;
+}
+
+.btn-black.button--stroke::after {
     border-color: transparent;
 }
 
@@ -3449,6 +3458,10 @@ input:focus-visible {
 
 .max-w-450-px {
     max-width: 450px;
+}
+
+.max-w-880-px {
+    max-width: 880px;
 }
 
 .max-w-1140-px {

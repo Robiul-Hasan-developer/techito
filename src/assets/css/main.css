@@ -4239,6 +4239,14 @@ input:focus-visible {
     padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.75rem);
 }
 
+.pt-80 {
+    padding-block-start: 80px;
+}
+
+.py-80 {
+    padding-block: 80px;
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -6031,6 +6039,18 @@ input:focus-visible {
     }
 }
 /* creative team section css end */
+/* ====================== Contact One section start ============================== */
+.blur-bg-white {
+    background: #FFFFFF3B;
+    border: 1px solid #FFFFFF4F;
+    backdrop-filter: blur(145px);
+}
+
+.end-62-percent {
+    inset-inline-end: 62%;
+}
+
+/* ====================== Contact One section end ============================== */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

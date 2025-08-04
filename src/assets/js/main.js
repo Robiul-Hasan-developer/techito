@@ -245,9 +245,6 @@
 
     
     // ========================= AOS Js Start ===========================
-    // AOS.init({
-    //   once: false,
-    // });
     AOS.init({
       once: false, // animation will trigger every time the element enters the viewport
       offset: -80, // starts animation exactly when element enters viewport
@@ -437,6 +434,14 @@
     });
   // ========================= Testimonials Slider Js End ===================
 
+   // ============== Magnific Popup Js Start =======================
+  $('.gallery-popup').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
+  // ============== Magnific Popup Js End =======================
     
     
     

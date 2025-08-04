@@ -1,0 +1,17 @@
+/* ============================= Gallery Section start ================================ */
+.grid-cols-5 {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 575px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* ============================= Gallery Section end ================================ */

@@ -1283,6 +1283,10 @@ input:focus-visible {
     background-color: hsl(var(--white)/0.1);
 }
 
+.bg-black-65 {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -6076,6 +6080,24 @@ input:focus-visible {
 }
 
 /* =============================== Blog Section css End =============================== */
+/* ============================= Gallery Section start ================================ */
+.grid-cols-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 991px) {
+    .grid-cols-5 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .grid-cols-5 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* ============================= Gallery Section end ================================ */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

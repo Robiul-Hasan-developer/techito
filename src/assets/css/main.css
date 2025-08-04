@@ -6051,6 +6051,31 @@ input:focus-visible {
 }
 
 /* ====================== Contact One section end ============================== */
+/* =============================== Blog Section css start =============================== */
+.blog-item__content {
+    padding: clamp(1.5rem, 0.8077rem + 1.4423vw, 2.25rem);
+    padding-inline-end: 24px;
+    padding-block-end: 0;
+    position: relative;
+    z-index: 1;
+    margin-block-start: -48px;
+    margin-inline-start: 16px;
+}
+
+.blog-item__content::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 12px);
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    background-color: #030303;
+    border-radius: 12px 6px 6px 6px;
+    z-index: -1;
+    border-inline-start: 3px solid var(--main-600);
+}
+
+/* =============================== Blog Section css End =============================== */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

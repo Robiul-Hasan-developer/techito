@@ -1,9 +1,10 @@
 /* =========================== Accordion Css start ============================= */
 .common-accordion {
     .accordion-item {
-        &:not(:last-child) {
-            margin-block-end: 20px;
-        }
+        background-color: transparent;
+        color: #fff;
+        border: 0;
+        border-bottom: 1px solid #FFFFFF4F !important;
     }
 
     &:first-of-type .accordion-button.collapsed {
@@ -14,7 +15,22 @@
         border-radius: 5px;
     }
 
+    .accordion-body {
+        padding: 0;
+        padding-inline-start: 44px;
+        padding-block-end: 28px;
+        padding-inline-end: 40px;
+    }
+
     .accordion-button {
+        background-color: transparent;
+        padding-block: 40px;
+        padding-inline-start: 44px;
+
+        @media (max-width: 1200px) {
+            padding-block: 28px;
+        }
+
         &::after {
             background-image: none;
         }
@@ -37,31 +53,40 @@
         &[aria-expanded="true"],
         &[aria-expanded="false"] {
             &::after {
-                font-family: "Phosphor";
-                font-weight: 900;
-                content: "\f106";
-                color: var(--main-600);
-                display: inline-block;
                 position: absolute;
+                content: "\e3d4";
+                font-family: "Phosphor";
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                border: 1px solid var(--neutral-100);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                inset-inline-end: 0;
                 inset-block-start: 50%;
                 transform: translateY(-50%);
-                inset-inline-end: 30px;
-                height: unset;
-                text-align: center;
-
-                @include msm-screen {
-                    inset-inline-end: 20px;
-                }
+                color: var(--neutral-500);
+                transition: .3s ease-in-out;
             }
         }
 
-        &[aria-expanded="false"] {
-            &::after {
-                content: "\f107";
-                color: hsl(var(--heading-color));
-            }
+        &[aria-expanded="true"]::after {
+            background-color: #030303 !important;
+            color: #fff !important;
+            border-color: #030303 !important;
+            content: "\e32a";
+            inset-inline-end: 24px;
         }
     }
+}
+
+
+// .accordion-item:has(.accordion-collapse.show),
+.accordion-item:has(.accordion-button[aria-expanded=true]) {
+    background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%) !important;
+    border-radius: 16px;
 }
 
 @media (max-width: 575px) {
@@ -76,26 +101,6 @@
             background: var(--gradient-main) !important;
         }
     }
-}
-
-.background {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50rem;
-    background: var(--gradient-main);
-    position: absolute;
-    z-index: -1;
-    inset-block-start: 50%;
-    transform: translateY(-50%);
-    inset-inline-start: 0;
-    transition: all 0.2s linear;
-    border-radius: 50rem;
-    pointer-events: none;
-}
-
-.background.style-two {
-    height: calc(100% - 6px);
 }
 
 /* ================================= Accordion Css End =========================== */

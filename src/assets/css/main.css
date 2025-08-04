@@ -2015,6 +2015,11 @@ input:focus-visible {
     pointer-events: none;
 }
 
+@media (max-width: 1800px) {
+    .hand-shape-two {
+        display: none;
+    }
+}
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
@@ -3458,6 +3463,10 @@ input:focus-visible {
 
 .max-w-450-px {
     max-width: 450px;
+}
+
+.max-w-346-px {
+    max-width: 346px;
 }
 
 .max-w-880-px {

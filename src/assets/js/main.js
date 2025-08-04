@@ -245,8 +245,13 @@
 
     
     // ========================= AOS Js Start ===========================
+    // AOS.init({
+    //   once: false,
+    // });
     AOS.init({
-      once: false,
+      once: false, // animation will trigger every time the element enters the viewport
+      offset: -80, // starts animation exactly when element enters viewport
+      anchorPlacement: 'bottom-bottom', // trigger when the bottom of the element hits the bottom of the viewport
     });
     // ========================= AOS Js End ===========================
 

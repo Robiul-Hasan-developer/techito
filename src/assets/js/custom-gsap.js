@@ -499,7 +499,6 @@ gsap.utils.toArray(".team-item-wrapper").forEach(el => {
 })
 
 gsap.utils.toArray(".team-item-wrapper > .team-item").forEach(el => {
-  console.log(el.children[0])
   el.addEventListener("mouseenter", (e) => {
     gsap.to(el, {color: "rgba(255, 255, 255, 0.5)"})
     gsap.to(el.children[0], {x: -10})

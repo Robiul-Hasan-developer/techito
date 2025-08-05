@@ -2478,6 +2478,10 @@ input:focus-visible {
     color: var(--main-600) !important;
 }
 
+.group:hover .group-hover-text-white-gradient {
+    background: #fff;
+}
+
 .group:hover .group-hover-bg-white {
     background-color: hsl(var(--white)) !important;
 }
@@ -4645,6 +4649,10 @@ input:focus-visible {
     box-shadow: 0 6px 30px 0px #0000000a;
 }
 
+.common-shadow-1 {
+    box-shadow: 4px 4px 79px 32px #00000008;
+}
+
 /* Box shadow End */
 /* transition Css Class start */
 .tw-transition {
@@ -5365,12 +5373,12 @@ input:focus-visible {
 }
 
 .header.fixed-header {
-    position: sticky;
+    position: fixed !important;
     inset-inline-start: 0;
     inset-block-start: 0;
     inset-inline-end: 0;
     width: 100%;
-    z-index: 9;
+    z-index: 99;
     backdrop-filter: blur(24px);
     animation: slideDown 0.35s ease-out;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -5391,6 +5399,12 @@ input:focus-visible {
         transform: translateY(0);
     }
 }
+
+.fixed-header-bg-white.fixed-header {
+    background-color: hsl(var(--white)/0.9);
+    backdrop-filter: blur(10px);
+}
+
 /* Header Menu and Submenu Css Start */
 .nav-menu__item.activePage > a {
     color: var(--main-600) !important;
@@ -6180,15 +6194,19 @@ input:focus-visible {
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
 }
 
-.gradient-bg-main {
+.gradient-green-yellow .gradient-bg-main {
     background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
 }
 
-.btn-main {
+.gradient-green-yellow .btn-main {
     background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%) !important;
 }
 
-.text-main-gradient {
+.gradient-green-yellow .text-main-gradient {
+    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+}
+
+.gradient-green-yellow .hover-gradient-main::before {
     background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
 }
 

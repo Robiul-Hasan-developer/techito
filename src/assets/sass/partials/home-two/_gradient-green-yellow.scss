@@ -12,16 +12,23 @@
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
 }
 
-.gradient-bg-main {
-    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
-}
 
-.btn-main {
-    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%) !important;
-}
+.gradient-green-yellow {
+    .gradient-bg-main {
+        background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    }
 
-.text-main-gradient {
-    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    .btn-main {
+        background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%) !important;
+    }
+
+    .text-main-gradient {
+        background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    }
+
+    .hover-gradient-main::before {
+        background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    }
 }
 
 /* gradient green yellow css end */

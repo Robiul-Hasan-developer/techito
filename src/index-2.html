@@ -352,7 +352,7 @@
 
 <!-- ==================== Header Two Start Here ==================== -->
 <header
-    class="header header-one position-absolute top-0 w-100 tw-start-0 tw-end-0 tw-transition-all tw-z-99 border-bottom border-neutral-200">
+    class="header fixed-header-bg-white position-absolute top-0 w-100 tw-start-0 tw-end-0 tw-transition-all tw-z-99 border-bottom border-neutral-200">
     <div class="container max-w-1750-px">
         <nav class="d-flex align-items-center justify-content-between position-relative">
             <!-- Logo Start -->
@@ -615,10 +615,10 @@
                 </h1>
             </div>
             <div class="max-w-410-px">
-                <p class="text-neutral-500" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">Techito is
+                <p class="text-neutral-500" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Techito is
                     a pioneering IT solutions provider focused on empowering
                     businesses with innovative technology and tailored services.</p>
-                <div class="tw-mt-9" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
+                <div class="tw-mt-9" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                     <a href="service.html"
                         class="btn btn-main hover-style-one button--stroke active-scale-094 tw-duration-100 d-inline-flex align-items-center justify-content-center group active--translate-y-2 tw-py-505 tw-px-105 rounded-pill"
                         data-block="button">
@@ -664,12 +664,14 @@
 <!-- ===================== Marquee section end ======================= -->
 
 <!-- ======================== What We Do section start ============================ -->
-<div class="what-we-do py-120 position-relative z-1">
+<div class="what-we-do py-120 position-relative z-1 overflow-hidden">
     <div class="position-absolute top-0 tw-end-0 tw-mt-9 max-w-20-percent z-n1 animated-upDown">
-        <img src="assets/images/shapes/what-we-do-shape2.png" alt="Shape">
+        <img src="assets/images/shapes/what-we-do-shape2.png" alt="Shape" data-aos="fade-left" data-aos-duration="1000"
+            data-aos-delay="100">
     </div>
     <div class="position-absolute bottom-0 tw-start-0 tw-mb-12 max-w-20-percent z-n1 animated-upDown">
-        <img src="assets/images/shapes/what-we-do-shape1.png" alt="Shape">
+        <img src="assets/images/shapes/what-we-do-shape1.png" alt="Shape" data-aos="fade-right" data-aos-duration="1000"
+            data-aos-delay="100">
     </div>
 
     <div class="container">
@@ -770,7 +772,8 @@
             <div class="col-xl-7">
                 <div class="h-100">
                     <div class="row h-100">
-                        <div class="col-xxl-5 col-md-6 col-sm-7">
+                        <div class="col-xxl-5 col-md-6 col-sm-7" data-aos="fade-up" data-aos-duration="800"
+                            data-aos-delay="100">
                             <div class="position-relative h-100 hover-animation-white tw-rounded-xl group-item group">
                                 <img src="assets/images/thumbs/hiring-img1.png" alt="Thumbnail"
                                     class="w-100 h-100 tw-rounded-xl object-fit-cover group-hover-item-scale-12 tw-duration-500">
@@ -786,7 +789,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-7 col-md-6 col-sm-5 mt-sm-0 mt-4">
+                        <div class="col-xxl-7 col-md-6 col-sm-5 mt-sm-0 mt-4" data-aos="fade-up" data-aos-duration="800"
+                            data-aos-delay="200">
                             <div class="position-relative h-100 hover-animation-white tw-rounded-xl group-item group">
                                 <img src="assets/images/thumbs/hiring-img2.png" alt="Thumbnail"
                                     class="w-100 h-100 tw-rounded-xl object-fit-cover group-hover-item-scale-12 tw-duration-500">
@@ -795,7 +799,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-5">
+            <div class="col-xl-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <div class="position-relative h-100 hover-animation-white tw-rounded-xl group-item group">
                     <img src="assets/images/thumbs/hiring-img3.png" alt="Thumbnail"
                         class="w-100 h-100 tw-rounded-xl object-fit-cover group-hover-item-scale-12 tw-duration-500">
@@ -815,7 +819,8 @@
 <!-- ======================== Brand section start ========================== -->
 <div class="brand pt-120">
     <div class="container max-w-1410-px">
-        <div class="border-center tw-mb-15 text-center overflow-hidden">
+        <div class="border-center tw-mb-15 text-center overflow-hidden" data-aos="fade-up" data-aos-duration="800"
+            data-aos-delay="100">
             <div
                 class="border-left-right border-neutral bg-neutral-100 tw-py-4 tw-px-9 text-heading d-inline-block rounded-pill border border-neutral-200 text-uppercase">
                 Trusted by 500 teams to
@@ -900,6 +905,73 @@
     </div>
 </div>
 <!-- ======================== Brand section End ========================== -->
+
+<!-- ======================= Trusted By Two Section start ===================== -->
+<section class="trusted-by py-120">
+    <div class="container">
+        <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div
+                    class="trusted-by-item hover-gradient-main tw-p-36-px common-shadow-1 tw-rounded-xl bg-white group group-item tw-duration-500 border border-neutral-100">
+                    <h6 class="tw-text-lg tw-mb-4 group-hover-text-white tw-duration-500">Global Management</h6>
+                    <p class="text-neutral-500 group-hover-text-white tw-duration-500">
+                        Powering growth for 56K+ businesses worldwide with our innovative tech solutions.
+                    </p>
+                    <div class="tw-mt-12 d-flex align-items-center tw-gap-2 flex-sm-nowrap flex-wrap">
+                        <h2
+                            class="text-main-gradient fw-medium counter flex-shrink-0 group-hover-text-white-gradient tw-duration-500">
+                            56K+
+                        </h2>
+                        <p class="text-heading fw-semibold group-hover-text-white tw-duration-500">
+                            Businesses Managed Globally
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div
+                    class="trusted-by-item hover-gradient-main tw-p-36-px common-shadow-1 tw-rounded-xl bg-white group group-item tw-duration-500 border border-neutral-100">
+                    <h6 class="tw-text-lg tw-mb-4 group-hover-text-white tw-duration-500">Secure Operations</h6>
+                    <p class="text-neutral-500 group-hover-text-white tw-duration-500">
+                        Safeguarding critical data for over 120K+ clients with enterprise-grade security.
+                    </p>
+                    <div class="tw-mt-12 d-flex align-items-center tw-gap-2 flex-sm-nowrap flex-wrap">
+                        <h2
+                            class="text-main-gradient fw-medium counter flex-shrink-0 group-hover-text-white-gradient tw-duration-500">
+                            120K+
+                        </h2>
+                        <p class="text-heading fw-semibold group-hover-text-white tw-duration-500">
+                            Clients Secured Worldwide
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div
+                    class="trusted-by-item hover-gradient-main tw-p-36-px common-shadow-1 tw-rounded-xl bg-white group group-item tw-duration-500 border border-neutral-100">
+                    <h6 class="tw-text-lg tw-mb-4 group-hover-text-white tw-duration-500">Proven Performance</h6>
+                    <p class="text-neutral-500 group-hover-text-white tw-duration-500">
+                        Delivering 99.9% uptime and seamless service to tech leaders and startups alike.
+                    </p>
+                    <div class="tw-mt-12 d-flex align-items-center tw-gap-2 flex-sm-nowrap flex-wrap">
+                        <h2
+                            class="text-main-gradient fw-medium counter flex-shrink-0 group-hover-text-white-gradient tw-duration-500">
+                            99.9%
+                        </h2>
+                        <p class="text-heading fw-semibold group-hover-text-white tw-duration-500">
+                            Uptime & Service Reliability
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ======================= Trusted By Two Section end ===================== -->
 
 
 

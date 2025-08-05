@@ -22,4 +22,12 @@
     }
 }
 
+.border-neutral {
+
+    &::before,
+    &::after {
+        background-color: var(--neutral-200);
+    }
+}
+
 /* Brand css end */

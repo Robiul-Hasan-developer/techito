@@ -57,6 +57,10 @@
     margin-inline-end: auto;
   }
 
+  &-ms-50-px {
+    margin-inline-start: clamp(1.5rem, 0rem + 3.125vw, 3.125rem);;
+  }
+
   &-mt {
     &-96-px {
       margin-block-start: clamp(2rem, -1.6923rem + 7.6923vw, 6rem);

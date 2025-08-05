@@ -2045,6 +2045,10 @@ input:focus-visible {
     font-size: clamp(1.25rem, 0.6923rem + 1.6827vw, 2.25rem);
 }
 
+.text-48-px {
+    font-size: 48px;
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -2302,6 +2306,10 @@ input:focus-visible {
 
 .tw-h-92-px {
     height: 92px;
+}
+
+.tw-h-148-px {
+    height: 148px;
 }
 
 .tw-h-320-px {
@@ -4320,6 +4328,10 @@ input:focus-visible {
     padding-block: 80px;
 }
 
+.tw-py-280-px {
+    padding-block: clamp(12rem, -17.2222rem + 46.2963vw, 22rem);
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -4468,6 +4480,47 @@ input:focus-visible {
 }
 
 /* Placeholder Classes End */
+/* Play Animation css start */
+.play-button::before {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 50%;
+    inset-inline-start: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-animation: animate 2.3s ease-out infinite;
+    animation: animate 2.3s ease-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    30% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+    }
+
+    60% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0.9;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+/* Play Animation css end */
 /* Border Radius Css Start */
 .tw-rounded {
     border-radius: 0.25rem;
@@ -4880,6 +4933,10 @@ input:focus-visible {
 
 .tw-w-px {
     width: 1px;
+}
+
+.tw-w-148-px {
+    width: 148px;
 }
 
 .tw-w-300-px {

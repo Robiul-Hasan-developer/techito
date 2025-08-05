@@ -85,6 +85,10 @@
   padding-block: 80px;
 }
 
+.tw-py-280-px {
+  padding-block: clamp(12rem, -17.2222rem + 46.2963vw, 22rem)
+}
+
 .py-120 {
   padding-block-start: 60px;
   padding-block-end: 60px;

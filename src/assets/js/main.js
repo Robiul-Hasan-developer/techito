@@ -443,7 +443,17 @@
   });
   // ============== Magnific Popup Js End =======================
     
-    
+  // ================================ Parallax js Start =================================
+  $(".parallax-window").parallax();
+  // ================================ Parallax js End =================================
+      
+    // ========================= magnific Popup Js Start =====================
+    $(".play-button").magnificPopup({
+      type: "iframe",
+      removalDelay: 300,
+      mainClass: "mfp-fade",
+    });
+    // ========================= magnific Popup Js End =====================
     
     
     

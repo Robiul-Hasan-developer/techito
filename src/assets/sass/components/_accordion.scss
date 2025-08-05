@@ -98,7 +98,7 @@
 
     .sm-device-link-bg {
         .nav-link.active {
-            background: var(--gradient-main) !important;
+            background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%) !important;
         }
     }
 }

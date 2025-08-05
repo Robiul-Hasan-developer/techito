@@ -1,0 +1,44 @@
+<!-- ==================== Header Two Start Here ==================== -->
+<header
+    class="header header-one position-absolute top-0 w-100 tw-start-0 tw-end-0 tw-transition-all tw-z-99 border-bottom border-neutral-100">
+    <div class="container max-w-1740-px">
+        <nav class="d-flex align-items-center justify-content-between position-relative">
+            <!-- Logo Start -->
+            <div class="logo">
+                <a href="index.html" class="link">
+                    <img src="assets/images/logo/logo-white.png" alt="Logo" class="max-w-200-px">
+                </a>
+            </div>
+            <!-- Logo End  -->
+
+            <!-- Menu Start  -->
+            <div class="header-menu d-lg-block d-none">
+                @@include('../partials/_nav-menu.html', { "class" : "tw-gap-6" })
+            </div>
+            <!-- Menu End  -->
+
+            <!-- Header Right start -->
+            <div class="d-lg-block d-none tw-ms-10">
+                <div class="d-flex align-items-center tw-gap-5 flex-shrink-0">
+                    <button type="button" class="active-scale-09 tw-duration-100 search-popup__button">
+                        <img src="assets/images/icons/search-icon.png" alt="Icon" class="text-invert-black">
+                    </button>
+                    <div class="d-flex align-items-center tw-gap-205">
+                        <span
+                            class="tw-w-11 tw-h-11 gradient-bg-main rounded-circle d-flex align-items-center justify-content-center text-white tw-text-xl">
+                            <i class="ph-fill ph-phone"></i>
+                        </span>
+                        <a href="tel:+23321423442"
+                            class="h6 fw-semibold text-heading font-body hover-underline hover-text-main-600">+23 321
+                            423 442</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="toggle-mobileMenu leading-none d-lg-none ms-3 text-heading tw-text-9">
+                <i class="ph ph-list"></i>
+            </button>
+            <!-- Header Right End  -->
+        </nav>
+    </div>
+</header>
+<!-- ==================== Header Two End Here ==================== -->

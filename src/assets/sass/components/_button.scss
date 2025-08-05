@@ -73,7 +73,7 @@
 
     // ============= Different Color Button Start ==================
     &-main {
-        background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%) !important;
+        background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%) !important;
         color: hsl(var(--white)) !important;
 
         &.button--stroke {

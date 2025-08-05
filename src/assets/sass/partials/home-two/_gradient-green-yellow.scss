@@ -1,0 +1,19 @@
+/* gradient green yellow css start */
+.gradient-green-yellow:root {
+    /* template main color */
+    --main-h: 351;
+    --main-s: 100%;
+    --main-l: 65%;
+    --main: var(--main-h) var(--main-s) var(--main-l);
+
+    --main-two-h: 255;
+    --main-two-s: 77%;
+    --main-two-l: 52%;
+    --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+}
+
+.gradient-bg-main {
+    background: linear-gradient(270deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
+}
+
+/* gradient green yellow css end */

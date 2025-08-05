@@ -1,6 +1,6 @@
 /* Gradient BG Css Start */
 .gradient-bg-main {
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
 }
 
 .hover-gradient-main {
@@ -12,7 +12,7 @@
         content: "";
         width: 100%;
         height: 0;
-        background: var(--gradient-main);
+        background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
         inset-block-end: 0;
         inset-inline-start: 0;
         z-index: -1;

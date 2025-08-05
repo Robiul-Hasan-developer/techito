@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50rem;
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
     position: absolute;
     z-index: -1;
     inset-block-start: 50%;

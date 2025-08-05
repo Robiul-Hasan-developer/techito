@@ -96,7 +96,6 @@
     --main-two-s: 100%;
     --main-two-l: 69%;
     --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
-    --gradient-main: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%);
   /* White Color */
     --white: 0 0% 100%;
     --black: 0 0% 1%;
@@ -265,7 +264,7 @@
     }
 
     .sm-device-link-bg .nav-link.active {
-        background: var(--gradient-main) !important;
+        background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%) !important;
     }
 }
 /* ================================= Accordion Css End =========================== */
@@ -340,7 +339,7 @@
 }
 
 .btn-main {
-    background: linear-gradient(90deg, #1DCCF3 0%, #6294FF 100%) !important;
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%) !important;
     color: hsl(var(--white)) !important;
 }
 
@@ -609,7 +608,7 @@ input[type=number] {
     width: 100%;
     height: 100%;
     border-radius: 50rem;
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
     position: absolute;
     z-index: -1;
     inset-block-start: 50%;
@@ -1811,7 +1810,7 @@ input:focus-visible {
 }
 
 .text-main-gradient {
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2527,6 +2526,10 @@ input:focus-visible {
     filter: brightness(0) invert(0);
 }
 
+.text-invert-black {
+    filter: brightness(0) invert(0);
+}
+
 /* ======================== Group Css End =============================== */
 /* grid css start */
 .grid-cols-2 {
@@ -2547,7 +2550,7 @@ input:focus-visible {
 /* grid css end */
 /* Gradient BG Css Start */
 .gradient-bg-main {
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
 }
 
 .hover-gradient-main {
@@ -2560,7 +2563,7 @@ input:focus-visible {
     content: "";
     width: 100%;
     height: 0;
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
     inset-block-end: 0;
     inset-inline-start: 0;
     z-index: -1;
@@ -5793,7 +5796,7 @@ input:focus-visible {
     content: "";
     width: 100%;
     height: 100%;
-    background: var(--gradient-main);
+    background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
     inset-inline-start: -22px;
     inset-block-start: 0;
     border-radius: inherit;
@@ -6120,6 +6123,24 @@ input:focus-visible {
     }
 }
 /* ============================= Gallery Section end ================================ */
+/* gradient green yellow css start */
+.gradient-green-yellow:root {
+  /* template main color */
+    --main-h: 351;
+    --main-s: 100%;
+    --main-l: 65%;
+    --main: var(--main-h) var(--main-s) var(--main-l);
+    --main-two-h: 255;
+    --main-two-s: 77%;
+    --main-two-l: 52%;
+    --main-two: var(--main-two-h) var(--main-two-s) var(--main-two-l);
+}
+
+.gradient-bg-main {
+    background: linear-gradient(270deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
+}
+
+/* gradient green yellow css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

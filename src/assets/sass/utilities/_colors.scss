@@ -9,8 +9,8 @@
 
 .text-main-gradient {
   background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
 
 .text {

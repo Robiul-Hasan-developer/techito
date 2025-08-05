@@ -1811,8 +1811,8 @@ input:focus-visible {
 
 .text-main-gradient {
     background: linear-gradient(90deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 
 .text--white {
@@ -6160,6 +6160,14 @@ input:focus-visible {
     background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
 }
 
+.btn-main {
+    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%) !important;
+}
+
+.text-main-gradient {
+    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+}
+
 /* gradient green yellow css end */
 /* Banner two css start */
 .banner-two {
@@ -6167,6 +6175,21 @@ input:focus-visible {
 }
 
 /* Banner two css end */
+/* marquee two css start */
+.marquee-two {
+    background: linear-gradient(270deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+    margin-block-start: 80px;
+}
+
+@media (min-width: 768px) {
+    .marquee-two {
+        padding-block-start: 220px;
+        margin-block-start: -140px;
+    }
+}
+/* marquee two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

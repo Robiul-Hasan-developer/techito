@@ -1,0 +1,14 @@
+/* marquee two css start */
+.marquee-two {
+    background: linear-gradient(270deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+    margin-block-start: 80px;
+
+    @media (min-width: 768px) {
+        padding-block-start: 220px;
+        margin-block-start: -140px;
+    }
+}
+
+/* marquee two css end */

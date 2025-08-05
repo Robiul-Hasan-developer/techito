@@ -9,14 +9,22 @@
   &-26-px {
     gap: clamp(1rem, 0.0938rem + 4.5vw, 1.625rem);
   }
+
+  &-32-px {
+    gap: clamp(1rem, 0.0769rem + 1.9231vw, 2rem);
+  }
+
   &-42-px {
     gap: clamp(1.5rem, 0.0938rem + 4.5vw, 2.625rem);
   }
+
   &-56-px {
     gap: clamp(1.5rem, -4.48rem + 7.98vw, 3.5rem);
   }
+
   &-74-px {
     gap: clamp(1.5rem, -24.8393rem + 28.0952vw, 4.625rem);
   }
 }
+
 /* Gap Css end */

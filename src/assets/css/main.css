@@ -2002,6 +2002,10 @@ input:focus-visible {
     line-height: 1;
 }
 
+.tw-leading-08 {
+    line-height: 0.8;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -2446,6 +2450,10 @@ input:focus-visible {
 
 .tw-gap-26-px {
     gap: clamp(1rem, 0.0938rem + 4.5vw, 1.625rem);
+}
+
+.tw-gap-32-px {
+    gap: clamp(1rem, 0.0769rem + 1.9231vw, 2rem);
 }
 
 .tw-gap-42-px {
@@ -3468,6 +3476,10 @@ input:focus-visible {
     max-width: 450px;
 }
 
+.max-w-410-px {
+    max-width: 410px;
+}
+
 .max-w-346-px {
     max-width: 346px;
 }
@@ -3480,6 +3492,10 @@ input:focus-visible {
     max-width: 1140px;
 }
 
+.max-w-1146-px {
+    max-width: 1146px;
+}
+
 .max-w-1410-px {
     max-width: 1410px;
 }
@@ -3490,6 +3506,10 @@ input:focus-visible {
 
 .max-w-1740-px {
     max-width: 1740px;
+}
+
+.max-w-1750-px {
+    max-width: 1750px;
 }
 
 .max-w-690-px {
@@ -6137,10 +6157,16 @@ input:focus-visible {
 }
 
 .gradient-bg-main {
-    background: linear-gradient(270deg, hsl(var(--main)) 0%, hsl(var(--main-two)) 100%);
+    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
 }
 
 /* gradient green yellow css end */
+/* Banner two css start */
+.banner-two {
+    padding-block-start: 190px;
+}
+
+/* Banner two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

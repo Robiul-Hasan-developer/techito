@@ -12,6 +12,10 @@
         max-width: 250px;
     }
 
+    &-270-px {
+        max-width: 270px;
+    }
+
     &-450-px {
         max-width: 450px;
     }
@@ -22,6 +26,10 @@
 
     &-346-px {
         max-width: 346px;
+    }
+
+    &-800-px {
+        max-width: 800px;
     }
 
     &-880-px {
@@ -52,9 +60,17 @@
         max-width: 1750px;
     }
 
+    &-610-px {
+        max-width: 610px;
+    }
+
     &-690-px {
         max-width: 690px;
     }
+}
+
+.max-w-20-percent {
+    max-width: 20%;
 }
 
 /* Max width Css Class End */

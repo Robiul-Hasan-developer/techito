@@ -2006,6 +2006,10 @@ input:focus-visible {
     line-height: 0.8;
 }
 
+.tw-leading-16 {
+    line-height: 1.625;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -2073,6 +2077,10 @@ input:focus-visible {
 
 .text-80-px {
     font-size: clamp(2.75rem, 0.6731rem + 4.3269vw, 5rem);
+}
+
+.text-98-px {
+    font-size: clamp(3rem, 0.1154rem + 6.0096vw, 6.125rem);
 }
 
 .text-36-px {
@@ -2346,6 +2354,10 @@ input:focus-visible {
     height: 148px;
 }
 
+.tw-h-184-px {
+    height: 184px;
+}
+
 .tw-h-320-px {
     height: 320px;
 }
@@ -2508,6 +2520,10 @@ input:focus-visible {
 
 .tw-gap-74-px {
     gap: clamp(1.5rem, -24.8393rem + 28.0952vw, 4.625rem);
+}
+
+.tw-gap-80-px {
+    gap: clamp(3.5rem, -24.8393rem + 28.0952vw, 5rem);
 }
 
 /* Gap Css end */
@@ -4367,15 +4383,8 @@ input:focus-visible {
 }
 
 .py-120 {
-    padding-block-start: 60px;
-    padding-block-end: 60px;
-}
-
-@media (min-width: 576px) {
-    .py-120 {
-        padding-block-start: 80px;
-        padding-block-end: 80px;
-    }
+    padding-block-start: 80px;
+    padding-block-end: 80px;
 }
 
 @media (min-width: 992px) {
@@ -4386,13 +4395,7 @@ input:focus-visible {
 }
 
 .pt-120 {
-    padding-block-start: 60px;
-}
-
-@media (min-width: 576px) {
-    .pt-120 {
-        padding-block-start: 80px;
-    }
+    padding-block-start: 80px;
 }
 
 @media (min-width: 992px) {
@@ -4402,69 +4405,12 @@ input:focus-visible {
 }
 
 .pb-120 {
-    padding-block-end: 60px;
-}
-
-@media (min-width: 576px) {
-    .pb-120 {
-        padding-block-end: 80px;
-    }
+    padding-block-end: 80px;
 }
 
 @media (min-width: 992px) {
     .pb-120 {
         padding-block-end: 120px;
-    }
-}
-
-.py-60 {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
-}
-
-@media (min-width: 576px) {
-    .py-60 {
-        padding-block-start: 40px;
-        padding-block-end: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    .py-60 {
-        padding-block-start: 60px;
-        padding-block-end: 60px;
-    }
-}
-
-.pt-60 {
-    padding-block-start: 30px;
-}
-
-@media (min-width: 576px) {
-    .pt-60 {
-        padding-block-start: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    .pt-60 {
-        padding-block-start: 60px;
-    }
-}
-
-.pb-60 {
-    padding-block-end: 30px;
-}
-
-@media (min-width: 576px) {
-    .pb-60 {
-        padding-block-end: 40px;
-    }
-}
-
-@media (min-width: 992px) {
-    .pb-60 {
-        padding-block-end: 60px;
     }
 }
 /* ================================= Padding Css End =========================== */
@@ -4971,6 +4917,10 @@ input:focus-visible {
 
 .tw-w-148-px {
     width: 148px;
+}
+
+.tw-w-184-px {
+    width: 184px;
 }
 
 .tw-w-300-px {
@@ -5987,6 +5937,20 @@ input:focus-visible {
     min-width: max-content;
 }
 
+@media (max-width: 767px) {
+    .marquee-absolute {
+        margin-block-end: 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .marquee-absolute {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        margin-block-start: 60px;
+    }
+}
 /* =========================== Service Section Start ========================== */
 .service-item-wrapper {
     display: flex;
@@ -6323,6 +6287,13 @@ input:focus-visible {
     }
 }
 /* marquee two css end */
+/* Project Two css start */
+@media (min-width: 768px) {
+    .mt-216-px {
+        margin-block-start: 216px;
+    }
+}
+/* Project Two css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

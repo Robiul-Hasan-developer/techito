@@ -90,13 +90,8 @@
 }
 
 .py-120 {
-  padding-block-start: 60px;
-  padding-block-end: 60px;
-
-  @media (min-width: 576px) {
-    padding-block-start: 80px;
-    padding-block-end: 80px;
-  }
+  padding-block-start: 80px;
+  padding-block-end: 80px;
 
   @media (min-width: 992px) {
     padding-block-start: 120px;
@@ -105,11 +100,7 @@
 }
 
 .pt-120 {
-  padding-block-start: 60px;
-
-  @media (min-width: 576px) {
-    padding-block-start: 80px;
-  }
+  padding-block-start: 80px;
 
   @media (min-width: 992px) {
     padding-block-start: 120px;
@@ -117,53 +108,10 @@
 }
 
 .pb-120 {
-  padding-block-end: 60px;
-
-  @media (min-width: 576px) {
-    padding-block-end: 80px;
-  }
+  padding-block-end: 80px;
 
   @media (min-width: 992px) {
     padding-block-end: 120px;
-  }
-}
-
-.py-60 {
-  padding-block-start: 30px;
-  padding-block-end: 30px;
-
-  @media (min-width: 576px) {
-    padding-block-start: 40px;
-    padding-block-end: 40px;
-  }
-
-  @media (min-width: 992px) {
-    padding-block-start: 60px;
-    padding-block-end: 60px;
-  }
-}
-
-.pt-60 {
-  padding-block-start: 30px;
-
-  @media (min-width: 576px) {
-    padding-block-start: 40px;
-  }
-
-  @media (min-width: 992px) {
-    padding-block-start: 60px;
-  }
-}
-
-.pb-60 {
-  padding-block-end: 30px;
-
-  @media (min-width: 576px) {
-    padding-block-end: 40px;
-  }
-
-  @media (min-width: 992px) {
-    padding-block-end: 60px;
   }
 }
 

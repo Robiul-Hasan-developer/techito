@@ -17,9 +17,14 @@
     font-size: clamp(2.75rem, 0.6731rem + 4.3269vw, 5rem);
   }
 
+  &-98-px {
+    font-size: clamp(3rem, 0.1154rem + 6.0096vw, 6.125rem);
+  }
+
   &-36-px {
     font-size: clamp(1.25rem, 0.6923rem + 1.6827vw, 2.25rem);
   }
+
   &-48-px {
     font-size: 48px;
   }

@@ -3571,6 +3571,10 @@ input:focus-visible {
     max-width: 200px;
 }
 
+.max-w-130-px {
+    max-width: 130px;
+}
+
 .max-w-300-px {
     max-width: 300px;
 }
@@ -6388,6 +6392,12 @@ input:focus-visible {
     }
 }
 /* ======================== How It Works section end ============================== */
+/* Testimonials Two section css start */
+.testimonials-two {
+    background-color: #FFC251;
+}
+
+/* Testimonials Two section css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

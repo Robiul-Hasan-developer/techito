@@ -475,45 +475,46 @@ if($('.roadmap-item').length) {
 // **************************** Roadmap js End ****************************
   
 
-
 // **************************** Hover Image Show js Start ****************************
 const imageWrapper = document.querySelector(".team-item-image-wrapper")
 const imageSlider = document.querySelector(".team-item-image")
 
-gsap.utils.toArray(".team-item-wrapper").forEach(el => {
-  // mouse enter
-  el.addEventListener("mouseenter", (e) => {
-    gsap.to(imageWrapper, { duration: 0.4, opacity: 1})
-  });
-  el.addEventListener("mouseleave", (e) => {
-    gsap.to(imageWrapper, {opacity: 0, duration: 0.4})
-  });
-  // get number of teams
-  const projectNumber = imageSlider.children.length
-  const n = 100 / projectNumber
-  el.addEventListener("mousemove", (e) => {
-   const indexNumber = e.srcElement.dataset.indexNumber
-    
-    gsap.to(imageSlider, { y: -(n * indexNumber) + "%", duration: 0.5 })
- });
-})
-
-gsap.utils.toArray(".team-item-wrapper > .team-item").forEach(el => {
-  el.addEventListener("mouseenter", (e) => {
-    gsap.to(el, {color: "rgba(255, 255, 255, 0.5)"})
-    gsap.to(el.children[0], {x: -10})
-    gsap.to(el.children[1], {x: 10})
-  });
-  el.addEventListener("mouseleave", (e) => {
-    gsap.to(el, {color: "#fff"})
-    gsap.to(el.children[0], {x: 0})
-    gsap.to(el.children[1], {x: 0})
-  });
-})
-
-document.addEventListener("mousemove", (e) => {
-   gsap.to(imageWrapper, {left: e.clientX, top: e.clientY})
- });
+if(imageWrapper && imageSlider) {
+  gsap.utils.toArray(".team-item-wrapper").forEach(el => {
+    // mouse enter
+    el.addEventListener("mouseenter", (e) => {
+      gsap.to(imageWrapper, { duration: 0.4, opacity: 1})
+    });
+    el.addEventListener("mouseleave", (e) => {
+      gsap.to(imageWrapper, {opacity: 0, duration: 0.4})
+    });
+    // get number of teams
+    const projectNumber = imageSlider.children.length
+    const n = 100 / projectNumber
+    el.addEventListener("mousemove", (e) => {
+     const indexNumber = e.srcElement.dataset.indexNumber
+      
+      gsap.to(imageSlider, { y: -(n * indexNumber) + "%", duration: 0.5 })
+   });
+  })
+  
+  gsap.utils.toArray(".team-item-wrapper > .team-item").forEach(el => {
+    el.addEventListener("mouseenter", (e) => {
+      gsap.to(el, {color: "rgba(255, 255, 255, 0.5)"})
+      gsap.to(el.children[0], {x: -10})
+      gsap.to(el.children[1], {x: 10})
+    });
+    el.addEventListener("mouseleave", (e) => {
+      gsap.to(el, {color: "#fff"})
+      gsap.to(el.children[0], {x: 0})
+      gsap.to(el.children[1], {x: 0})
+    });
+  })
+  
+  document.addEventListener("mousemove", (e) => {
+     gsap.to(imageWrapper, {left: e.clientX, top: e.clientY})
+   });
+}
 // **************************** Hover Image Show js End ****************************
 
 

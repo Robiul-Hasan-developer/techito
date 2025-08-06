@@ -403,6 +403,20 @@
     background-color: hsl(var(--white));
 }
 
+.group:hover .group-hover-btn-white {
+    background: #fff !important;
+    color: hsl(var(--heading-color)) !important;
+}
+
+.group:hover .group-hover-btn-white:hover {
+    color: hsl(var(--white)) !important;
+}
+
+.group:hover .group-hover-btn-white .button-icon__right {
+    background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+    color: #fff;
+}
+
 /* =========================== Button Css End =================== */
 /* ================================= Form Css Start =========================== */
 /* input File Start */
@@ -2031,6 +2045,13 @@ input:focus-visible {
         display: none;
     }
 }
+
+.writing-mode-sideway-lr {
+    writing-mode: sideways-lr;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+}
+
 /* ================================= Classes Css End =========================== */
 /* element double animation css start */
 .element-double-animation {
@@ -4396,6 +4417,10 @@ input:focus-visible {
 
 .tw-py-60-px {
     padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.75rem);
+}
+
+.tw-py-54-px {
+    padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.375rem);
 }
 
 .pt-80 {

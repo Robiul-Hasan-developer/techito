@@ -74,6 +74,10 @@
     &-60-px {
       padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.75rem);
     }
+
+    &-54-px {
+      padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.375rem);
+    }
   }
 }
 

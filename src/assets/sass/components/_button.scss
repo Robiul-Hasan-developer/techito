@@ -167,4 +167,23 @@
     }
 }
 
+
+.group {
+    &:hover {
+        .group-hover-btn-white {
+            background: #fff !important;
+            color: hsl(var(--heading-color)) !important;
+
+            &:hover {
+                color: hsl(var(--white)) !important;
+            }
+
+            .button-icon__right {
+                background: linear-gradient(93.2deg, hsl(var(--main-two)) 9.95%, hsl(var(--main)) 49.32%, #FFC251 92.62%);
+                color: #fff;
+            }
+        }
+    }
+}
+
 /* =========================== Button Css End =================== */

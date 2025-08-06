@@ -13,6 +13,7 @@
     &-08 {
         line-height: .8;
     }
+
     &-16 {
         line-height: 1.625;
     }
@@ -36,4 +37,11 @@
     }
 }
 
+.writing-mode-sideway-lr {
+    writing-mode: sideways-lr;
+   inset-block-start: 0;
+    inset-inline-end: 0;
+}
+
+ 
 /* ================================= Classes Css End =========================== */

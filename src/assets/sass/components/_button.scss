@@ -96,28 +96,33 @@
 }
 
 
-.button__label {
-    transition: .6s ease-in-out !important;
+.button-icon__right,
+.button-icon__left {
+    transition: .3s ease-in-out !important;
 }
 
-.button-icon__right {
-    position: absolute !important;
-    inset-inline-end: 6px;
-    transition: .6s ease-in-out !important;
-}
-
-.btn {
-    padding-inline-end: 54px !important;
+.hover-move-effect {
+    .button-icon__left {
+        width: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
 
     &:hover {
-        padding-inline-start: 60px;
-        padding-inline-end: 0 !important;
+        .button-icon__left {
+            width: 48px;
+            visibility: visible;
+            opacity: 1;
+        }
 
         .button-icon__right {
-            inset-inline-end: calc(100% - 54px);
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
         }
     }
 }
+
 
 
 .hover-style {

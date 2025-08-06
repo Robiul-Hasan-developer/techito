@@ -356,27 +356,27 @@
     border-color: transparent;
 }
 
-.button__label {
-    transition: 0.6s ease-in-out !important;
+.button-icon__right,
+.button-icon__left {
+    transition: 0.3s ease-in-out !important;
 }
 
-.button-icon__right {
-    position: absolute !important;
-    inset-inline-end: 6px;
-    transition: 0.6s ease-in-out !important;
+.hover-move-effect .button-icon__left {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.btn {
-    padding-inline-end: 54px !important;
+.hover-move-effect:hover .button-icon__left {
+    width: 48px;
+    visibility: visible;
+    opacity: 1;
 }
 
-.btn:hover {
-    padding-inline-start: 60px;
-    padding-inline-end: 0 !important;
-}
-
-.btn:hover .button-icon__right {
-    inset-inline-end: calc(100% - 54px);
+.hover-move-effect:hover .button-icon__right {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .hover-style-one:hover, .hover-style-one:active {
@@ -2024,6 +2024,40 @@ input:focus-visible {
     }
 }
 /* ================================= Classes Css End =========================== */
+/* element double animation css start */
+.element-double-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.element-double-animation__element {
+    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+    -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.element-double-animation__element::after {
+    content: attr(data-content);
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    color: inherit;
+    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+    -webkit-transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.element-double-animation:hover .element-double-animation__element {
+    transform: translateY(-100%);
+}
+
+.element-double-animation:hover .element-double-animation__element::after {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+}
+
+/* element double animation css end */
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;

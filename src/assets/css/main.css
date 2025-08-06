@@ -3570,6 +3570,10 @@ input:focus-visible {
     max-width: 450px;
 }
 
+.max-w-350-px {
+    max-width: 350px;
+}
+
 .max-w-410-px {
     max-width: 410px;
 }
@@ -6318,6 +6322,47 @@ input:focus-visible {
     }
 }
 /* Project Two css end */
+/* ======================== How It Works section start ============================== */
+.how-it-works-two-item__step {
+    margin-block-end: 16px;
+}
+
+@media (min-width: 992px) {
+    .how-it-works-two-item__step {
+        margin-block-end: 60px;
+    }
+}
+
+.arrow-line {
+    animation: slideRight 10s linear infinite;
+}
+
+.arrow-line-two {
+    animation: slideRightTwo 10s linear infinite;
+    animation-delay: 4.15s;
+    transform: translateX(-100%);
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(calc(100% - 300px));
+    }
+}
+
+@keyframes slideRightTwo {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(calc(100% - 300px));
+    }
+}
+/* ======================== How It Works section end ============================== */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;

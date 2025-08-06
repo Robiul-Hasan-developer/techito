@@ -2075,6 +2075,10 @@ input:focus-visible {
     font-size: clamp(1.25rem, 1.0192rem + 0.4808vw, 1.375rem);
 }
 
+.text-66-px {
+    font-size: clamp(3rem, 0.6731rem + 4.3269vw, 4.125rem);
+}
+
 .text-80-px {
     font-size: clamp(2.75rem, 0.6731rem + 4.3269vw, 5rem);
 }
@@ -2617,6 +2621,18 @@ input:focus-visible {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+@media (max-width: 1199px) {
+    .grid-xl-2 {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1199px) and (max-width: 480px) {
+    .grid-xl-2 {
+        grid-template-columns: 1fr;
+    }
+}
 /* grid css end */
 /* Gradient BG Css Start */
 .gradient-bg-main {
@@ -3540,6 +3556,10 @@ input:focus-visible {
 
 .max-w-270-px {
     max-width: 270px;
+}
+
+.max-w-280-px {
+    max-width: 280px;
 }
 
 .max-w-450-px {

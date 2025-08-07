@@ -61,6 +61,10 @@
   }
 
   &-px {
+    &-36-px {
+      padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.25rem);
+    }
+
     &-44-px {
       padding-inline: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.75rem);
     }
@@ -71,6 +75,10 @@
   }
 
   &-py {
+    &-44-px {
+      padding-block: clamp(1.5rem, 0.3846rem + 3.3654vw, 2.75rem);
+    }
+
     &-60-px {
       padding-block: clamp(2rem, 0.3846rem + 3.3654vw, 3.75rem);
     }

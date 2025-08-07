@@ -243,6 +243,16 @@
     });
     // ========================= Search Popup Js End ===================
 
+    // ========================= Sidebar Menu slide Js start ===================
+    $('.sidebar-menu-slide-bar-btn').on('click', function () {
+      $('.sidebar-menu-slide').toggleClass('active');
+      $('.overlay').toggleClass('show-overlay show-allover');
+    });
+    $('.sidebar-menu-slide-close, .overlay').on('click', function () {
+      $('.sidebar-menu-slide').removeClass('active');
+      $(".overlay").removeClass("show-overlay show-allover");
+    });
+    // ========================= Sidebar Menu slide Js End ===================
     
     // ========================= AOS Js Start ===========================
     AOS.init({

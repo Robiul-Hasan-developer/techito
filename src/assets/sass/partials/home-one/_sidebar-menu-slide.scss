@@ -1,0 +1,18 @@
+/* sidebar menu slide css start */
+.sidebar-menu-slide {
+    max-width: 350px;
+    width: 100%;
+    background-color: #011648;
+    transform: translateX(100%);
+    transition: .5s ease-in-out;
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
+.show-allover {
+    z-index: 999;
+}
+
+/* sidebar menu slide css end */

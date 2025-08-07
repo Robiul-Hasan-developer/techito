@@ -5894,6 +5894,24 @@ input:focus-visible {
 }
 
 /* ============================ Search Popup css end ===================================== */
+/* sidebar menu slide css start */
+.sidebar-menu-slide {
+    max-width: 350px;
+    width: 100%;
+    background-color: #011648;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar-menu-slide.active {
+    transform: translateX(0);
+}
+
+.show-allover {
+    z-index: 999;
+}
+
+/* sidebar menu slide css end */
 /* Home One Css start */
 .home-one body {
     background-color: #030303;

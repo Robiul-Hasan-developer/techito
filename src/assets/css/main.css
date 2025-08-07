@@ -6426,6 +6426,14 @@ input:focus-visible {
         margin-block-start: 40px;
     }
 }
+
+.dots-style .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: hsl(var(--heading-color));
+    cursor: pointer;
+}
+
 /* Testimonials Two section css end */
 /* ================================== rtl css start ================================== */
 .text-start {

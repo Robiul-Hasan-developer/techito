@@ -456,28 +456,31 @@
   // ========================= magnific Popup Js End =====================
     
   // ========================= Testimonials Two Js Start =====================
-   var swiper = new Swiper(".testimonials-two-slider", {
-     autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+  var swiper = new Swiper(".testimonials-two-slider", {
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    speed: 1500,
+    grabCursor: true,
+    loop: true,
+    slidesPerView: 1,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-120%", 0, -500],
       },
-      autoplay: false,
-      speed: 1500,
-      grabCursor: true,
-      loop: true,
-      slidesPerView: 1,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: ["-120%", 0, -500],
-        },
-        next: {
-          shadow: true,
-          translate: ["120%", 0, -500],
-        },
+      next: {
+        shadow: true,
+        translate: ["120%", 0, -500],
       },
-    });
+    },
+    pagination: {
+      el: ".testimonials-two-pagination",
+      clickable: true,
+    },
+  });
   // ========================= Testimonials Two Js End =====================
 
     

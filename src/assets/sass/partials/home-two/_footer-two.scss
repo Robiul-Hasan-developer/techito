@@ -1,0 +1,19 @@
+/* Footer Two Css Start */
+.rounded-md-pill {
+    border-radius: 12px;
+    @media (min-width: 768px) {
+        border-radius: 50rem;
+    }
+}
+
+.footer-two-shape {
+    &-one {
+        margin-inline-start: -10%;
+    }
+
+    &-two {
+        margin-inline-end: -10%;
+    }
+}
+
+/* Footer Two Css End */

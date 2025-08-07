@@ -1,6 +1,36 @@
 /* Testimonials Two section css start */
-.testimonials-two {
+.bg-yellow {
     background-color: #FFC251;
+}
+
+.bg-half-bottom {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: calc(100% - 190px);
+        bottom: 0;
+        inset-inline-start: 0;
+        @extend .bg-yellow;
+        z-index: -1;
+    }
+}
+
+
+.testimonials-marquee {
+    @media (max-width: 1199px) {
+        margin-block-end: 60px;
+    }
+
+    @media (min-width: 1200px) {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        margin-block-start: 40px;
+    }
 }
 
 /* Testimonials Two section css end */

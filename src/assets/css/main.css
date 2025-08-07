@@ -6393,10 +6393,39 @@ input:focus-visible {
 }
 /* ======================== How It Works section end ============================== */
 /* Testimonials Two section css start */
-.testimonials-two {
+.bg-yellow, .bg-half-bottom::before {
     background-color: #FFC251;
 }
 
+.bg-half-bottom {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-half-bottom::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 190px);
+    bottom: 0;
+    inset-inline-start: 0;
+    z-index: -1;
+}
+
+@media (max-width: 1199px) {
+    .testimonials-marquee {
+        margin-block-end: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials-marquee {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        margin-block-start: 40px;
+    }
+}
 /* Testimonials Two section css end */
 /* ================================== rtl css start ================================== */
 .text-start {

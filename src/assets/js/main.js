@@ -447,14 +447,39 @@
   $(".parallax-window").parallax();
   // ================================ Parallax js End =================================
       
-    // ========================= magnific Popup Js Start =====================
-    $(".play-button").magnificPopup({
-      type: "iframe",
-      removalDelay: 300,
-      mainClass: "mfp-fade",
-    });
-    // ========================= magnific Popup Js End =====================
+  // ========================= magnific Popup Js Start =====================
+  $(".play-button").magnificPopup({
+    type: "iframe",
+    removalDelay: 300,
+    mainClass: "mfp-fade",
+  });
+  // ========================= magnific Popup Js End =====================
     
+  // ========================= Testimonials Two Js Start =====================
+   var swiper = new Swiper(".testimonials-two-slider", {
+     autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      autoplay: false,
+      speed: 1500,
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          shadow: true,
+          translate: ["120%", 0, -500],
+        },
+      },
+    });
+  // ========================= Testimonials Two Js End =====================
+
     
     
   });
